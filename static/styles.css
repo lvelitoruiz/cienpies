@@ -154,6 +154,7 @@ nav a:hover, nav a:focus {
   line-height: 23px;
   color: #022144;
   padding-bottom: 16px;  
+  padding-top: 60px;
   /* background-image: url(img/title-decoration.png);
   background-repeat: no-repeat;
   background-position: center bottom;*/
@@ -205,7 +206,7 @@ nav a:hover, nav a:focus {
 
 #hero .tagline {
   width: 556px;
-  margin: 40px auto;
+  margin: 26px auto 40px auto;
 }
 
 #event-facts {
@@ -222,13 +223,14 @@ nav a:hover, nav a:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 1.4;
   margin: 0 20px;
   padding: 0;
 }
 
 #event-facts li img {
   margin-bottom: 10px;
-  width: 24px;
+  height: 30px;
 }
 
 
@@ -261,41 +263,26 @@ nav a:hover, nav a:focus {
 
 /* Speakers */ 
 
+#featured-speakers {
+  margin-bottom: 60px;
+}
+
 .speaker-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  column-gap: 35px;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-#featured-speakers.speaker-list {
-  max-width: 840px;
-  grid-template-columns: auto auto auto;
-  column-gap: 60px;
-  margin-bottom: 70px;
-}
-
-#featured-speakers.speaker-list li {
-  max-width: 242px;
-}
-
-#featured-speakers.speaker-list figure {
-  width: 242px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .speaker-list figure {
-  line-height: 0;
-  margin: 0;
-  width: 165px;
-  margin-bottom: 24px;
+  max-width: 242px;
+  min-width: 242px;
+  margin: 15px;
 }
 
 .speaker-list figure img {
   display: block;
+  height: 203px;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -372,11 +359,6 @@ nav a:hover, nav a:focus {
   background-color: #F9F9F9;
 }
 
-#sponsors .section-title {
-  padding-top: 60px;
-  margin-bottom: 50px;
-}
-
 #sponsors figure {
   margin: 0;
   position: relative;
@@ -385,6 +367,9 @@ nav a:hover, nav a:focus {
 #sponsors figure img {
   border-radius: 6px;
   display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 #sponsors figure figcaption {
@@ -398,17 +383,9 @@ nav a:hover, nav a:focus {
   border-radius: 6px;
 }
 
-#sponsors ul {
-  padding: 0;
-  margin: 0 auto;
-  list-style-type: none;
-  display: grid;
-  grid-gap: 10px;
-  max-width: 790px;
-}
-
 #sponsors .premium-sponsors {
-  grid-template-columns: auto auto auto; 
+  display: flex;
+  justify-content: center;
 }
 
 #sponsors .premium-sponsors figcaption {
@@ -440,6 +417,7 @@ nav a:hover, nav a:focus {
   font-size: 14px;
   line-height: 16px;
   display: block;
+  font-weight: 100;
 }
 
 #sponsors .gold-sponsors {
@@ -451,16 +429,19 @@ nav a:hover, nav a:focus {
 }
 
 #sponsors .silver-sponsors {
-  grid-template-columns: auto auto auto;
+  display: flex;
+  justify-content: center;
 }
 
-#sponsors .silver-sponsors li {
+#sponsors .silver-sponsors div {
   text-align: center;
+  width: 252px;
 }
 
 #sponsors .premium-sponsors figure {
   height: 183px;
   max-width: 252px;
+  margin: 10px;
 }
 
 #sponsors .gold-sponsors figure {
@@ -495,12 +476,6 @@ nav a:hover, nav a:focus {
   #featured-speakers.speaker-list {
     column-gap: 10px;
     margin-bottom: 50px;
-  }
-
-  .speaker-list {
-    grid-template-columns: auto auto auto;
-    max-width: 560px;
-    column-gap: 35px;
   }
 
   /* Program */
@@ -548,6 +523,76 @@ nav a:hover, nav a:focus {
     background: url(img/menu-icon.png) no-repeat center center;
     text-indent: -99993em;
   }
+
+  /* speaker */
+
+  .speaker-list figure {
+    max-width: 200px;
+    min-width: 200px;
+  }
+  
+  #sponsors .premium-sponsors figure {
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-mobile.active {
+    background-color: rgba(0, 0, 0, 0.68);
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  #site-header .nav-mobile.active nav {
+    background: white;
+    bottom: 0;
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 30px;
+    top: 0;
+  }
+
+  #site-header .nav-mobile.active nav .event-nav {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 70px;
+  }
+
+  #site-header .nav-mobile.active nav .event-nav a {
+    color: black;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  #site-header .nav-mobile.active nav .user-nav {
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+
+  #site-header .nav-mobile.active nav .user-nav li {
+    margin-left: 0;
+  }
+
+  .close-nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
 }
 
 /* Let's go Mobile */
@@ -564,20 +609,45 @@ nav a:hover, nav a:focus {
   }
 
   #hero h1 {
-    height: 53px;
-    width: 146px;
+    height: 82px;
+    width: 220px;
   }
   
   #hero .tagline {
     font-size: 14px;
     line-height: 21px;
     width: 289px;
-    margin: 40px auto;
+    margin: 26px auto 40px auto;
   }
   
   #event-facts {
     font-size: 12px;
     margin-bottom: 10px;
+  }
+
+  #sponsors .premium-sponsors figure {
+    min-width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  #sponsors .premium-sponsors figure {
+    height: 200px;
+  }
+
+  .speaker-list figure {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 10px 0;
+  }
+
+  .speaker-list figure img {
+    height: 300px;
+  }
+
+  #sponsors .silver-sponsors div {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   /* Description */
@@ -596,19 +666,21 @@ nav a:hover, nav a:focus {
   #description img {
     float: none;
   }
-
+  
   /* Sponsors */
   
   #speakers .wrapper {
-    width: 242px;
+    width: 80%;
   }
   #featured-speakers.speaker-list,
   .speaker-list {
-    grid-template-columns: auto;
+    flex-direction: column;
+    margin-bottom: 0;
   }
 
   .speaker-list figure {
     width: 242px;
+    margin-bottom: 30px;
   }
 
   #other-speakers {
@@ -628,13 +700,13 @@ nav a:hover, nav a:focus {
   /* Sponsors */
 
   #sponsors .wrapper {
-    width: 255px;
+    width: 90%;
   }
 
   #sponsors .premium-sponsors, 
   #sponsors .gold-sponsors, 
   #sponsors .silver-sponsors {
-    grid-template-columns: auto;
+    flex-direction: column;
   }
 }
 
@@ -729,14 +801,15 @@ nav a:hover, nav a:focus {
 }
 
 .schedule-item {
-  position: absolute;
   background: white;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  margin-bottom: 10px;
   border-radius: 5px;
+  bottom: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
   padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .schedule-item--line {

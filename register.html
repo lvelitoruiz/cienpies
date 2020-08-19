@@ -1,0 +1,89 @@
+{% extends "_layout.html" %}
+
+{% block title %}Developer Week | June 16-17, 2020{% endblock %}
+
+{% block head %}
+{%- endblock %}
+{% block content %}
+
+<main class="homepage-complete">
+  {% include 'side-banner.html' %}
+
+  <div class="side-content">
+    <div class="register">
+      <h2 class="g-title">Registro</h2>
+      <p>¿Ya te encuentras registrado? <a class="g-link--blue" href="">Iniciar sesión</a></p>
+      <div class="login-redes">
+        <p>Ingresa con:</p>
+        <div class="cont-btn">
+          <button class="btn-google">
+            <img src="/static/img/google-white.png" alt="">
+            <span>Google</span>
+          </button>
+          <button class="btn-linkedin">
+            <img src="/static/img/linkedin-white.png" alt="">
+            <span>Linkedin</span>
+          </button>
+        </div>
+      </div>
+      <form action="">
+        <div class="d-md-flex">
+          <div class="g-input g-input--icon mr-md-10 w-100">
+            <img src="/static/img/user.png" alt="">
+            <input type="text" placeholder="Nombre">
+          </div>
+          <div class="g-input g-input--icon ml-md-10 w-100">
+            <img src="/static/img/user.png" alt="">
+            <input type="text" placeholder="Apellido">
+          </div>  
+        </div>
+        <div class="d-md-flex">
+          <div class="g-select g-input--icon mr-md-10 w-100">
+            <img src="/static/img/user.png" alt="">
+            <select name="" id="">
+              <option value="" selected>DNI</option>
+              <option value="">Carné de Extranjería</option>
+              <option value="">Pasaporte</option>
+            </select>
+          </div>
+          <div class="g-input g-input--icon ml-md-10 w-100">
+            <img src="/static/img/user.png" alt="">
+            <input type="text" placeholder="Número de documento">
+          </div>  
+        </div>
+        <div class="g-input g-input--icon">
+          <img src="/static/img/email.png" alt="">
+          <input type="email" placeholder="Correo electrónico">
+        </div>
+        <div class="g-input g-input--icon">
+          <img src="/static/img/password.png" alt="">
+          <input type="password" placeholder="Ingresar contraseña">
+        </div>
+        <div class="g-input g-input--icon">
+          <img src="/static/img/password.png" alt="">
+          <input type="password" placeholder="Confirmar contraseña">
+        </div>
+        <div class="cont-link mt-10">
+          <div class="g-checkbox">
+            <input id="c1" type="checkbox">
+            <label for="c1">Acepto <a class="g-link--blue" href="">Términos y condiciones</a> y <a class="g-link--blue" href="">Politicas de privacidad</a></label>
+          </div>
+        </div>
+        <div class="cont-link mt-10">
+          <div class="g-checkbox">
+            <input id="c1" type="checkbox">
+            <label for="c1">Acepto la <a class="g-link--blue" href="">Política de tratamiento de protección de datos personales</a></label>
+          </div>
+        </div>
+        <div class="section-btn">
+          <button class="main-action w-100">Registrarme</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{%- endblock %}
+
+{% block scripts %}
+{%- endblock %}

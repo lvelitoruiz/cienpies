@@ -26,6 +26,18 @@ body {
   margin: 0
 }
 
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
 .w-100 {
   width: 100%;
 }
@@ -41,8 +53,13 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
-  padding-left: 6px;
-  white-space: nowrap;
+}
+
+.g-link--black {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .homepage-complete {
@@ -55,6 +72,18 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
+  }
+
+  .d-md-flex {
+    display: flex;
+  }
+
+  .ml-md-10 {
+    margin-left: 10px;
+  }
+  
+  .mr-md-10 {
+    margin-right: 10px;
   }
 }
 
@@ -208,7 +237,9 @@ nav a:hover, nav a:focus {
 
 @media screen and (min-width: 767px) {
   .g-title {
-    font-size: 30px;  
+    font-size: 30px;
+    line-height: 1.2; 
+    margin: 0;
   }
 }
 
@@ -482,7 +513,8 @@ nav a:hover, nav a:focus {
   height: 150px;
 }
 
-/* Input */
+/* Input and select */
+.g-select,
 .g-input {
   align-items: center;
   border-radius: 10px;
@@ -490,8 +522,10 @@ nav a:hover, nav a:focus {
   display: flex;
   height: 48px;
   padding: 0 16px;
+  position: relative;
 }
 
+.g-select select,
 .g-input input {
   appearance: none;
   background-color: white;
@@ -500,12 +534,200 @@ nav a:hover, nav a:focus {
   font-weight: 500;
   height: 90%;
   margin: 0;
-  padding-left: 16px;
+  padding-left: 14px;
   width: 100%;
 }
 
+.g-select select:focus,
 .g-input input:focus {
   outline: none;
+}
+
+::placeholder {
+  color: #C4C4C4;
+  font-weight: 300;
+}
+
+.g-select::before {
+  background-image: url('/static/img/arrow-down.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  height: 20px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  width: 20px;
+}
+
+/* checkbox */
+.g-checkbox {
+  align-items: center;
+  display: flex;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type="checkbox"],
+  input[type="radio"] {
+    --active: #FDA328;
+    --active-inner: #fff;
+    --border: #bbc1e1;
+    --border-hover: #FDA328;
+    --background: #fff;
+    --disabled: #f6f8ff;
+    --disabled-inner: #e1e6f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  }
+
+  input[type="checkbox"]:after,
+  input[type="radio"]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+
+  input[type="checkbox"]:checked,
+  input[type="radio"]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: 0.3s;
+    --d-t: 0.6s;
+    --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+
+  input[type="checkbox"]:disabled,
+  input[type="radio"]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+
+  input[type="checkbox"]:disabled:checked,
+  input[type="radio"]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  
+  input[type="checkbox"]:disabled + label,
+  input[type="radio"]:disabled + label {
+    cursor: not-allowed;
+  }
+
+  input[type="checkbox"]:hover:not(:checked):not(:disabled),
+  input[type="radio"]:hover:not(:checked):not(:disabled) {
+    --bc: var(--border-hover);
+  }
+
+  input[type="checkbox"]:focus,
+  input[type="radio"]:focus {
+    box-shadow: none;
+  }
+
+  input[type="checkbox"]:not(.switch),
+  input[type="radio"]:not(.switch) {
+    min-width: 21px;
+  }
+
+  input[type="checkbox"]:not(.switch):after,
+  input[type="radio"]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+
+  input[type="checkbox"]:not(.switch):checked,
+  input[type="radio"]:not(.switch):checked {
+    --o: 1;
+  }
+
+  input[type="checkbox"] + label,
+  input[type="radio"] + label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-left: 10px;
+    vertical-align: top;
+  }
+
+  input[type="checkbox"]:not(.switch) {
+    border-radius: 2px;
+  }
+
+  input[type="checkbox"]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 6px;
+    top: 3px;
+    -webkit-transform: rotate(var(--r, 20deg));
+            transform: rotate(var(--r, 20deg));
+  }
+
+  input[type="checkbox"]:not(.switch):checked {
+    --r: 43deg;
+  }
+
+  input[type="checkbox"].switch {
+    width: 38px;
+    border-radius: 11px;
+  }
+
+  input[type="checkbox"].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: var(--ab, var(--border));
+    -webkit-transform: translateX(var(--x, 0));
+            transform: translateX(var(--x, 0));
+  }
+
+  input[type="checkbox"].switch:checked {
+    --ab: var(--active-inner);
+    --x: 17px;
+  }
+
+  input[type="checkbox"].switch:disabled:not(:checked):after {
+    opacity: 0.6;
+  }
+
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+
+  input[type="radio"]:after {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: var(--active-inner);
+    opacity: 0;
+    -webkit-transform: scale(var(--s, 0.7));
+    transform: scale(var(--s, 0.7));
+  }
+
+  input[type="radio"]:checked {
+    --s: 0.5;
+  }
 }
 
 /* side */
@@ -547,6 +769,7 @@ nav a:hover, nav a:focus {
   height: 100%;
   justify-content: center;
   width: 100%;
+  padding-bottom: 100px
 }
 
 .side-content p {
@@ -556,11 +779,35 @@ nav a:hover, nav a:focus {
 }
 
 .side-content .section-btn {
+  background-color: white;
   bottom: 0;
   left: 0;
   padding: 20px;
   position: fixed;
   width: 100%;
+}
+
+.side-content .arrow-back {
+  margin-bottom: 40px;
+  display: flex; 
+  position: absolute;
+  top: 10px;
+}
+
+.side-content .arrow-back a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.side-content .arrow-back a .desktop {
+  display: none;
+}
+
+.side-content .arrow-back a span {
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 767px) {
@@ -589,6 +836,10 @@ nav a:hover, nav a:focus {
     flex-direction: column;
   }
 
+  .side-content {
+    padding-bottom: 0;
+  }
+
   .side-content p {
     color: #888888;
     font-size: 14px;
@@ -598,19 +849,54 @@ nav a:hover, nav a:focus {
     padding: 0;
     position: initial;
   }
+
+  .side-content .arrow-back {
+    margin-bottom: 40px;
+    display: flex;
+    position: initial;
+  }
+  
+  .side-content .arrow-back a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .side-content .arrow-back a span {
+    margin-left: 10px;
+  }
+
+  .side-content .arrow-back a .desktop {
+    display: initial;
+  }
+
+  .side-content .arrow-back a .mobile {
+    display: none;
+  }
   
 }
 
-/* Page validation-code */
+/* Page validation-code and login */
+.create-password,
+.recover-password,
+.register,
+.login,
 .validation-code {
   width: 90%
 }
 
+.recover-password h2,
 .validation-code h2 {
   margin-bottom: 20px;
   margin-top: 30px;
 }
 
+.create-password form,
+.recover-password form,
+.register form,
+.login form,
 .validation-code form {
   margin: 0 auto;
   padding-top: 40px;
@@ -618,23 +904,155 @@ nav a:hover, nav a:focus {
 }
 
 @media screen and (min-width: 767px) {
+  .create-password,
+  .recover-password,
+  .register,
+  .login,
   .validation-code {
-    width: 70%
+    width: 80%
   }
-
+ 
+  .recover-password h2,
   .validation-code h2 {
     margin-bottom: 60px;
     margin-top: 0;
   }
 
+  .create-password p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .create-password form,
+  .recover-password form,
+  .register form,
+  .login form,
   .validation-code form {
     margin: 0 auto;
     padding-top: 60px;
     width: 80%;
   }
 
+  .recover-password .main-action,
   .validation-code .main-action { 
     margin-top: 180px;
+  }
+}
+
+/* login */
+.login-redes {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.login-redes p {
+  color: black;
+  font-size: 16px;
+}
+
+.login-redes .cont-btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.login form .cont-link {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-redes button {
+  width: 100%
+}
+
+.btn-google {
+  align-items: center;
+  background: #DD4B39;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  display: flex;
+  margin: 5px;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.btn-linkedin {
+  align-items: center;
+  background: #0077B5;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  display: flex;
+  margin: 5px;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+.btn-google span,
+.btn-linkedin span {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.btn-google img,
+.btn-linkedin img {
+  height: 20px;
+}
+
+.login form .g-input {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .login form .g-input {
+    margin-bottom: 30px;
+  }
+
+  .login form .section-btn {
+    margin-top: 100px;
+  }
+
+  .login-redes button {
+    width: initial;
+  }
+}
+
+/* register */
+
+.register form .g-input,
+.register form .g-select {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .register form .g-input,
+  .register form .g-select {
+    margin-bottom: 15px;
+  }
+
+  .register form .section-btn {
+    margin-top: 40px;
+  }
+
+  .create-password .main-action {
+    margin-top: 100px;
+  }
+}
+
+/* create-password */
+
+.create-password form .g-input,
+.create-password form .g-select {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .create-password form .g-input,
+  .create-password form .g-select {
+    margin-bottom: 50px;
   }
 }
 

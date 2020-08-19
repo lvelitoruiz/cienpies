@@ -9,12 +9,21 @@
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
   <link rel="stylesheet" href="/static/normalize.css">
   <link rel="stylesheet" href="/static/styles.css?v=1.0">
+  <link rel="stylesheet" href="/static/modal.css">
   <link type="text/plain" rel="author" href="/humans.txt">
   {% block head %}{% endblock %}
 </head>
 <body>
   {% block content %}{% endblock %}
+  <div class="modal">
+    <div class="modal-inner">
+      <span data-modal-close>&times;</span>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+  <script src="/static/modal.js"></script>
   <script src="/static/scripts.js"></script>
+  <script>var vanillaModal = new VanillaModal.default()</script>
   {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -19,7 +19,17 @@
           <input type="text" placeholder="Código">
         </div>
         <div class="section-btn">
-          <button class="main-action w-100">Validar código</button>
+          <button class="main-action w-100" data-ref="#box3" data-modal-open>Validar código</button>
+          
+          <div class="g-modal" id="box3">
+            <div class="g-modal-small g-modal__alert check">
+              <div class="alert-item--title">
+                <img src="/static/img/check.png" alt="">
+                <h3 class="title">Código validado con éxito</h3>
+              </div>
+              <button class="main-action mt-20">Ir al Registro</button>
+            </div>
+          </div>
         </div>
       </form>
     </div>

@@ -7,10 +7,19 @@
 {% block content %}
 
 <main class="homepage-complete">
-  <div class="nav-side">
+  <div class="nav-side active">
     <img class="logo" src="/static/img/event-logo.png" alt="">
 
     <nav class="nav">
+      <img class="close-nav" src="static/img/close.png" alt="">
+      <div class="profile-mobile">
+        <div class="user">
+          <div class="user-icon">
+            <span>NM</span>
+          </div>
+          <p>Mi perfil</p>
+        </div>
+      </div>
       <ul>
         <li>
           <a class="active" href="">
@@ -54,8 +63,13 @@
 
   <div class="side-content-home">
     <div class="side-header">
+      <a id="open-mobile-menu" href="#">Abrir menú</a>
+      <div class="logo-mobile">
+        <img src="/static/img/event-logo.png" alt="">
+      </div>
       <div class="notification">
         <i class="icon-alert"></i>
+        <i class="icon-user-group"></i>
       </div>
       <div class="user">
         <div class="user-icon">
@@ -70,8 +84,8 @@
         <div class="bk-white initial p-20 mb-10">
           <h3 class="title">Hola,</h3>
           <p>Estamos a 2 días de que inicie el <b>DeveloperWeek 2020</b>, el evento más grande que reune a los mejores Ingenieros y Desarrolladores del mundo.</p>
-          <div class="d-flex align-items-center justify-content-between">
-            <p class="mb-0"><b>¡No te olvides de compartirnos en tus redes sociales!</b></p>
+          <div class="d-md-flex align-items-center justify-content-between">
+            <p><b>¡No te olvides de compartirnos en tus redes sociales!</b></p>
             <button class="btn-lineal">
               <i class="icon-share"></i>
               <span>Compartir</span>
@@ -79,6 +93,35 @@
           </div>
         </div>
         <div class="bk-white mb-10">
+          <div class="panel-redes">
+            <p class="mb-0">Redes sociales del evento:</p>
+            <div>
+              <a href=""><i class="icon-twitter"></i></a>
+              <a href=""><i class="icon-facebook"></i></a>
+              <a href=""><i class="icon-instagram"></i></a>
+            </div>
+          </div>
+          <div class="panel-banner">
+            <img class="panel-banner--bkg" src="/static/img/panel-banner.png" alt="">
+            <img class="panel-banner--logo" src="/static/img/event-logo.png" alt="">
+          </div>
+          <div class="panel-fetch">
+            <div class="fetch">
+              <i class="icon-calendar"></i>
+              <p class="mb-0">16 Junio, 8:00 am al 17 Jun, 1:00pm  </p>
+            </div>
+            <button class="btn-lineal">
+              <i class="icon-add-calendar"></i>
+              <span>Agregar al calendario</span>
+            </button>
+          </div>
+          <div class="panel-description">
+            <div class="w-100">
+              <h3 class="subtitle">Panel de Expertos</h3>
+              <p>DeveloperWeek Global 2020 es la conferencia de ingenieros y desarrolladores virtuales más grande del mundo, donde miles de participantes de todo el mundo convergen en línea para más de 100 conferencias magistrales y técnicas, concurso de lanzamiento virtual de tecnología para desarrolladores, premios para desarrolladores, hackathon virtual, exposición virtual y premios por apoyar a la comunidad de desarrolladores .</p>
+            </div>
+            <img src="/static/img/auspiciadores.png" alt="">
+          </div>
           <div class="panel-speakers p-10">
             <h3 class="subtitle p-10">Panel de Expertos</h3>
             <div class="speaker-list">
@@ -154,7 +197,7 @@
 
           <div class="panel-sponsors p-10">
             <h3 class="subtitle p-10">Aliados</h3>
-            <div class="silver-sponsors">
+            <div class="silver-sponsors mt-20">
               <div>
                 <img src="static/img/celepsa-logo.png" alt="Tekton labs">
               </div>
@@ -164,8 +207,6 @@
               <div>
                 <img src="static/img/entel-logo.png" alt="Solven">
               </div>
-            </div>
-            <div class="silver-sponsors">
               <div>
                 <img src="static/img/enel-logo.png" alt="Tekton labs">
               </div>
@@ -175,8 +216,6 @@
               <div>
                 <img src="static/img/statkraft-logo.png" alt="Solven">
               </div>
-            </div>
-            <div class="silver-sponsors">
               <div>
                 <img src="static/img/tgp-logo.png" alt="Tekton labs">
               </div>
@@ -186,28 +225,20 @@
               <div>
                 <img src="static/img/fenix-logo.png" alt="Solven">
               </div>
-            </div>
-            <div class="silver-sponsors">
               <div>
                 <img src="static/img/calera-logo.png" alt="Tekton labs">
               </div>
               <div>
                 <img src="static/img/kpmg-logo.png" alt="Wayra">
               </div>
-              <div>
-              </div>
             </div>
           </div>
 
           <div class="panel-sponsors p-10">
             <h3 class="subtitle p-10">Media Partner</h3>
-            <div class="silver-sponsors">
+            <div class="silver-sponsors mt-20">
               <div>
                 <img src="static/img/logo-latina.png" alt="Tekton labs">
-              </div>
-              <div>
-              </div>
-              <div>
               </div>
             </div>
           </div>

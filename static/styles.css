@@ -66,6 +66,10 @@ body {
   margin-top: 20px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
 .p-10 {
   padding: 10px;
 }
@@ -101,6 +105,13 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.2;
+}
+
+.g-link--gray {
+  color: #888888;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration: underline;
 }
 
 .g-link--black {
@@ -209,6 +220,41 @@ section {
 
 .btn-lineal i {
   padding-right: 6px;
+}
+
+.btn-circle {
+  background: #1C3E66;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.1);
+}
+
+.btn-chat {
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+}
+
+.btn-label {
+  border: 1px solid #888888;
+  border-radius: 20px;
+  color: #888888;
+  font-size: 14px;
+  padding: 10px 20px;
+  line-height: 1;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.btn-label.active {
+  background: #1C3E66;
+  color: white;
 }
 
 /* Header & Navigation */
@@ -590,6 +636,13 @@ nav a:hover, nav a:focus {
 }
 
 /* Input and select */
+.g-textarea textarea{
+  padding: 20px;
+  border: 1px solid #888888;
+  border-radius: 10px;
+  width: 100%;
+}
+
 .g-select,
 .g-input {
   align-items: center;
@@ -654,6 +707,12 @@ nav a:hover, nav a:focus {
 
 :focus {
   outline: none;
+}
+
+.label-optional {
+  font-size: 12px;
+  padding-left: 10px;
+  color: #888888;
 }
 
 /* checkbox */
@@ -873,6 +932,15 @@ nav a:hover, nav a:focus {
   color: #29BD38;
 }
 
+.g-modal__profile {
+  padding: 20px 30px;
+  color: #888888;
+}
+
+.g-modal__profile p {
+  font-size: 14px;
+}
+
 @media screen and (min-width: 767px) { 
   .g-modal-small {
     width: 412px; 
@@ -883,6 +951,10 @@ nav a:hover, nav a:focus {
   }
 
   .g-modal__alert {
+    padding: 40px 60px;
+  }
+
+  .g-modal__profile {
     padding: 40px 60px;
   }
 }
@@ -1106,6 +1178,16 @@ nav a:hover, nav a:focus {
 .notification i {
   font-size: 30px;
   margin-left: 5px;
+  position: relative;
+}
+
+.notification .alert-circle {
+  width: 12px;
+  height: 12px;
+  background: #DB2828;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
 }
 
 @media screen and (min-width: 767px) {
@@ -1263,6 +1345,7 @@ nav a:hover, nav a:focus {
   padding-left: 50px;
   padding-top: 60px;
   padding-bottom: 30px;
+  padding-right: 50px;
 }
 
 .profile-mobile .user {
@@ -1271,15 +1354,19 @@ nav a:hover, nav a:focus {
 }
 
 .profile-mobile .user .user-icon {
-  width: 50px;
+  min-width: 50px;
   display: flex;
   background: #E7E7E7;
-  height: 50px;
+  min-height: 50px;
   align-items: center;
   justify-content: center;
   color: #000000;
   border-radius: 50%;
   margin-right: 14px;
+}
+
+.profile-mobile .user p {
+  width: 100%;
 }
 
 @media screen and (min-width: 870px) {
@@ -1461,6 +1548,18 @@ nav a:hover, nav a:focus {
   justify-content: center;
 }
 
+.btn-blue {
+  align-items: center;
+  background: #1C3E66;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  display: flex;
+  margin: 5px;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
 .btn-google span,
 .btn-linkedin span {
   font-size: 14px;
@@ -1613,6 +1712,13 @@ nav a:hover, nav a:focus {
 
 .g-modal__sponsors--info .redes a {
   margin-right: 15px;
+}
+
+.g-modal__profile-label .subtitle{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
 }
 
 @media screen and (min-width: 767px) {
@@ -2050,6 +2156,10 @@ nav a:hover, nav a:focus {
   .d-mdx-none {
     display: none;
   }
+
+  .btn-chat {
+    display: none;
+  }
 }
 
 .panel-speakers .speaker-list {
@@ -2201,4 +2311,16 @@ nav a:hover, nav a:focus {
     top: 0;
     margin-top: 0;
   }
+}
+
+.box-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

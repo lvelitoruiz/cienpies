@@ -1967,8 +1967,26 @@ nav a:hover, nav a:focus {
 
 /* schedule */
 
+.schedule-page {
+  padding: 20px 50px;
+  overflow: auto;
+}
+
+.schedule-page .schedule {
+  width: 100%;
+}
+
 .schedule {
   display: flex;
+}
+
+.schedule--line {
+  position: absolute;
+  border: 1px dashed red;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-style: dashed;
 }
 
 .schedule--hour {
@@ -2043,6 +2061,7 @@ nav a:hover, nav a:focus {
   height: 100%;
   padding: 30px 20px;
   border-top: 1px solid #C4C4C4;
+  position: relative;
 }
 
 .schedule-box-1 {
@@ -2065,6 +2084,16 @@ nav a:hover, nav a:focus {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.schedule-item.disabled .schedule-item--line {
+  border-left-color: #888888;
+}
+
+.schedule-item.disabled .schedule-item--line span,
+.schedule-item.disabled .schedule-item--line p,
+.schedule-item.disabled .title {
+  color: #888888;
 }
 
 .schedule-item--line {

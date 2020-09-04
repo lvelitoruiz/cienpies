@@ -1822,10 +1822,10 @@ nav a:hover, nav a:focus {
   }
 
   .nav-mobile {
-    display: none;
-  }
-
-  .nav-mobile.active {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-100%);
     background-color: rgba(0, 0, 0, 0.68);
     bottom: 0;
     display: block;
@@ -1838,7 +1838,24 @@ nav a:hover, nav a:focus {
     z-index: 2;
   }
 
-  #site-header .nav-mobile.active nav {
+  .nav-mobile.active {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.68);
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  #site-header .nav-mobile nav {
     background: white;
     bottom: 0;
     display: block;
@@ -1848,7 +1865,7 @@ nav a:hover, nav a:focus {
     top: 0;
   }
 
-  #site-header .nav-mobile.active nav .event-nav {
+  #site-header .nav-mobile nav .event-nav {
     color: black;
     display: flex;
     flex-direction: column;
@@ -1856,19 +1873,19 @@ nav a:hover, nav a:focus {
     padding-top: 70px;
   }
 
-  #site-header .nav-mobile.active nav .event-nav a {
+  #site-header .nav-mobile nav .event-nav a {
     color: black;
     display: block;
     font-weight: 400;
     margin-bottom: 20px;
   }
 
-  #site-header .nav-mobile.active nav .user-nav {
+  #site-header .nav-mobile nav .user-nav {
     padding-left: 50px;
     padding-top: 20px;
   }
 
-  #site-header .nav-mobile.active nav .user-nav li {
+  #site-header .nav-mobile nav .user-nav li {
     margin-left: 0;
   }
 

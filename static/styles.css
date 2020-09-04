@@ -654,6 +654,17 @@ nav a:hover, nav a:focus {
   position: relative;
 }
 
+.g-input.error {
+  border-color: #DB2828;
+}
+
+.g-input.error .text-error {
+  bottom: -24px;
+  color: #DB2828;
+  font-size: 12px;
+  position: absolute;
+}
+
 .g-select select,
 .g-input input {
   appearance: none;
@@ -1487,7 +1498,7 @@ nav a:hover, nav a:focus {
   .login form,
   .validation-code form {
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 40px;
     width: 80%;
   }
 
@@ -1600,7 +1611,7 @@ nav a:hover, nav a:focus {
 @media screen and (min-width: 767px) {
   .register form .g-input,
   .register form .g-select {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .register form .section-btn {

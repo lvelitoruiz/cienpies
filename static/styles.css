@@ -30,6 +30,10 @@ body {
   margin: 0;
 }
 
+.m-15 {
+  margin: 15px;
+}
+
 .mb-05 {
   margin-bottom: 5px;
 }
@@ -311,6 +315,7 @@ nav a:hover, nav a:focus {
 
 /* Sections general */
 
+.info-schedule-page .wrapper,
 .homepage > section .wrapper,
 #site-header .wrapper {
   max-width: 925px;
@@ -611,11 +616,16 @@ nav a:hover, nav a:focus {
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.75) 16.84%, rgba(28, 28, 28, 0.391569) 49.31%, rgba(59, 59, 59, 0) 84.78%);
 }
 
+.info-schedule-page .silver-sponsors{
+  display: flex;
+}
+
 #sponsors .silver-sponsors {
   display: flex;
   justify-content: center;
 }
 
+.info-schedule-page .silver-sponsors div,
 #sponsors .silver-sponsors div {
   text-align: center;
   width: 252px;
@@ -631,6 +641,7 @@ nav a:hover, nav a:focus {
   height: 145px;
 }
 
+.info-schedule-page .silver-sponsors,
 #sponsors .silver-sponsors figure {
   height: 150px;
 }
@@ -1049,6 +1060,19 @@ nav a:hover, nav a:focus {
   align-items: center;
 }
 
+.info-schedule-page .arrow-back a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.info-schedule-page .arrow-back a span {
+  margin-left: 15px;
+}
+
 .side-content .arrow-back a .desktop {
   display: none;
 }
@@ -1202,6 +1226,10 @@ nav a:hover, nav a:focus {
 }
 
 @media screen and (min-width: 767px) {
+  .info-schedule-page .arrow-back a {
+    margin-left: 30px;
+  }
+  
   .side-banner {
     align-items: center;
     background: #022144;
@@ -1641,6 +1669,7 @@ nav a:hover, nav a:focus {
 @media screen and (max-width: 1024px) {
   /* From 0 to 1024 */
 
+  .info-schedule-page .wrapper,
   .homepage > section .wrapper,
   #site-header .wrapper {
     max-width: 768px;
@@ -1671,6 +1700,7 @@ nav a:hover, nav a:focus {
 
   /* Sponsors */
 
+  .info-schedule-page .silver-sponsors,
   #sponsors .premium-sponsors, 
   #sponsors .gold-sponsors,
   #sponsors .silver-sponsors {
@@ -1924,6 +1954,7 @@ nav a:hover, nav a:focus {
   
   /* Sponsors */
   
+  .info-schedule-page .wrapper,
   #speakers .wrapper {
     width: 70%;
   }
@@ -1958,6 +1989,7 @@ nav a:hover, nav a:focus {
     width: 90%;
   }
 
+  .info-schedule-page .silver-sponsors,
   #sponsors .premium-sponsors, 
   #sponsors .gold-sponsors, 
   #sponsors .silver-sponsors {
@@ -1968,12 +2000,18 @@ nav a:hover, nav a:focus {
 /* schedule */
 
 .schedule-page {
-  padding: 20px 50px;
+  padding: 20px 15px;
   overflow: auto;
 }
 
 .schedule-page .schedule {
   width: 100%;
+}
+
+.info-schedule-page {
+  overflow: auto;
+  display: block;
+  padding: 15px;
 }
 
 .schedule {
@@ -2084,6 +2122,7 @@ nav a:hover, nav a:focus {
   position: absolute;
   top: 0;
   width: 100%;
+  text-decoration: none;
 }
 
 .schedule-item.disabled .schedule-item--line {
@@ -2138,6 +2177,11 @@ nav a:hover, nav a:focus {
 }
 
 @media screen and (min-width: 767px) {
+  .schedule-page {
+    padding: 20px 50px;
+    overflow: auto;
+  }
+
   .description-box {
     align-items: center;
     display: flex;
@@ -2357,6 +2401,34 @@ nav a:hover, nav a:focus {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.box-alert {
+  background: rgba(2, 33, 68, 0.8);
+  color: white;
+  box-shadow: 0px 4px 4px rgba(164, 203, 249, 0.25);
+  display: flex;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  padding: 20px;
+  z-index: 2;
+  align-items: flex-start;
+}
+
+.box-alert p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 767px) {
+  .box-alert {
+    max-width: 340px;
+    border-radius: 5px 0px 0px 5px;
+  }
 }
 
 .center-flex {

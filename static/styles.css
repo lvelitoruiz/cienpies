@@ -125,6 +125,10 @@ body {
   line-height: 1.2;
 }
 
+.g-cursor-pointer {
+  cursor: pointer;
+}
+
 .homepage-complete {
   display: flex;
   flex-direction: column
@@ -147,6 +151,14 @@ body {
   
   .mr-md-10 {
     margin-right: 10px;
+  }
+
+  .text-md-center {
+    text-align: center;
+  }
+
+  .text-md-right {
+    text-align: right;
   }
 }
 
@@ -184,6 +196,18 @@ section {
   border: 1px solid #FDA328;
   padding: 12px 28px;
   border-radius: 10px;
+} 
+
+.secondary-action--blue {
+  color: #3E607B;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  border: 1px solid #3E607B;
+  padding: 12px 28px;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
 } 
 
 .user-nav .main-action, .user-nav .secondary-action  {
@@ -959,8 +983,73 @@ nav a:hover, nav a:focus {
   color: #888888;
 }
 
-.g-modal__profile p {
+.g-modal__speakers p {
   font-size: 14px;
+}
+
+.g-modal__speakers .profile-desktop {
+  display: none;
+}
+
+.g-modal__speakers .profile-mobile2 {
+  padding: 20px;
+}
+
+.g-modal__speakers .profile-mobile2 .icon {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.g-modal__speakers .profile-mobile2 .icon p {
+  margin: 7px 0;
+}
+
+.g-modal__speakers .profile-mobile2 .icon img {
+  max-width: 77px;
+  max-height: 77px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.g-modal__speakers .profile-mobile2 .text {
+  font-size: 14px;
+}
+
+.g-modal__speakers .profile-mobile2 .text p {
+  margin: 10px 0;
+  line-height: 20px;
+}
+
+.g-modal__speakers .redes {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.g-modal__speakers .redes a {
+  margin: 6px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.g-modal__speakers .calendar {
+  padding: 20px;
+}
+
+.g-modal__speakers .schedule--body__day {
+  height: initial;
+}
+
+.g-modal__speakers .schedule-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.g-modal__speakers .schedule-box-1 {
+  height: auto;
 }
 
 @media screen and (min-width: 767px) { 
@@ -978,6 +1067,31 @@ nav a:hover, nav a:focus {
 
   .g-modal__profile {
     padding: 40px 60px;
+  }
+
+  .profile-mobile2 {
+    display: none;
+  }
+
+  .g-modal__speakers .profile-desktop {
+    display: flex;
+    padding: 20px;
+  }
+
+  .g-modal__speakers .profile-desktop img {
+    max-height: 195px;
+    max-width: 195px;
+    margin-right: 30px;
+    object-fit: cover;
+  }
+
+  .g-modal__speakers .text {
+    font-size: 14px;
+  }
+
+  .g-modal__speakers .text p {
+    margin: 10px 0;
+    line-height: 20px;
   }
 }
 
@@ -2193,6 +2307,33 @@ nav a:hover, nav a:focus {
   padding: 40px 30px;
 }
 
+.schedule-item--date .datos span {
+  font-size: 11px;
+  color: #888888;
+}
+
+.schedule-item--date .datos p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.g-modal__schedule {
+  color: #888888;
+  padding: 40px;
+}
+
+.schedule-item--date .btn {
+  margin-top: 20px;
+}
+
+.schedule-item--date .inscrito {
+  color: #29BD38;
+}
+
+.schedule-item--date .inscrito span {
+  margin-left: 10px;
+}
+
 @media screen and (min-width: 767px) {
   .schedule-page {
     padding: 20px 50px;
@@ -2245,6 +2386,32 @@ nav a:hover, nav a:focus {
     align-items: center;
     flex-direction: row;
     margin-bottom: 6px;
+  }
+
+  .schedule-item--date {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .schedule-item--date .datos {
+    border-left: 1px solid #C4C4C4;
+    padding-left: 20px;
+  }
+
+  .schedule-item--date .datos span {
+    font-size: 11px;
+    color: #888888;
+  }
+
+  .schedule-item--date .datos p {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .schedule-item--date .btn {
+    margin-top: 0;
+    max-width: 140px;
   }
 
   .g-modal__schedule {

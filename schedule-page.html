@@ -65,9 +65,9 @@
 
   <div class="side-content-home">
     <div class="box-alert">
-      <img src="/static/img/alert-time.png" alt="">
+      <img src="/static/img/alert-time.png"alt="">
       <p>La charla <b>“Tecnología del 2020 en tiempos de Pandemia por el Coronavirus”</b> acaba de iniciar</p>
-      <a href=""><img src="/static/img/close-white.png" alt=""></a>
+      <a href="" class="alert-close"><img src="/static/img/close-white.png" alt=""></a>
     </div>
     
     <div class="side-header hidden">
@@ -235,141 +235,675 @@
           <ol class="schedule--body__nav">
             <li class="arrow-rigth"><i class="icon-arrow-rigth"></i></li>
             <li class="arrow-left"><i class="icon-arrow-left"></i></li>
-            <li class="active"><a href="#">16 Junio</a></li>
-            <li><a href="#">17 Junio</a></li>
-            <li><a href="#">18 Junio</a></li>
-            <li><a href="#">19 Junio</a></li>
-            <li><a href="#">10 Junio</a></li>
+            <li class="tab-trigger active" rel="el1"><a href="#">16 Junio</a></li>
+            <li class="tab-trigger" rel="el2"><a href="#">17 Junio</a></li>
+            <li class="tab-trigger" rel="el3"><a href="#">18 Junio</a></li>
+            <li class="tab-trigger" rel="el4"><a href="#">19 Junio</a></li>
+            <li class="tab-trigger" rel="el5"><a href="#">10 Junio</a></li>
           </ol>
-          <div class="schedule--body__day">
-            <div class="schedule--line" style="top: 140px;"></div>
-            <div class="schedule-box-1">
-              <div class="schedule-item disabled">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
-                  </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Presentador: <span>Alfonso Torres Valladares y Julian Gonzales Merino</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="schedule-box-1">
-              <a href="info-schedule-page.html" class="schedule-item" style="width: 49%;">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Tecnología del 2020</h3>
-                  </div>
-                  <p class="d-none d-md-block">09:00 am - 10:00 am</p>
-                  <p>Charla | Expositor: <span>Javier Egúzquiza</span></p>
-                </div>
-              </a>
-              <div class="schedule-item" style="width: 49%; right: 0;">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Róbotica del Futuro</h3>
-                  </div>
-                  <p class="d-none d-md-block">09:00 am - 10:00 am</p>
-                  <p>Charla | Expositor: <span>Angel Vasquez</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="schedule-box-1">
-              <div class="schedule-item">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
-                    <div class="d-flex align-items-center">
-                      <img src="/static/img/video.png" alt="">
-                      <a class="g-link--blue ml-md-10" href="">En vivo por Facebook</a>
+          <div class="schedule--body__container">
+            <div class="schedule--body__day active" id="el1">
+              <div class="schedule--line" style="top: 140px;"></div>
+              <div class="schedule-box-1">
+                <div class="schedule-item disabled">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida 2 a DeveloperWeek 2020</h3>
                     </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Presentador: <span>Alfonso Torres Valladares y Julian Gonzales Merino</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <a href="info-schedule-page.html" class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Tecnología del 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Javier Egúzquiza</span></p>
+                  </div>
+                </a>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Róbotica del Futuro</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Angel Vasquez</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                      <div class="d-flex align-items-center">
+                        <img src="/static/img/video.png" alt="">
+                        <a class="g-link--blue ml-md-10" href="">En vivo por Facebook</a>
+                      </div>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-2">
+                <div class="schedule-item" style="width: 49%; bottom: 55px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0; top:105px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="schedule-box-1">
-              <div class="schedule-item">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+            <div class="schedule--body__day" id="el2">
+              <div class="schedule--line" style="top: 140px;"></div>
+              <div class="schedule-box-1">
+                <div class="schedule-item disabled">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2021</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Presentador: <span>Alfonso Torres Valladares y Julian Gonzales Merino</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <a href="info-schedule-page.html" class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Tecnología del 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Javier Egúzquiza</span></p>
+                  </div>
+                </a>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Róbotica del Futuro</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Angel Vasquez</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                      <div class="d-flex align-items-center">
+                        <img src="/static/img/video.png" alt="">
+                        <a class="g-link--blue ml-md-10" href="">En vivo por Facebook</a>
+                      </div>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-2">
+                <div class="schedule-item" style="width: 49%; bottom: 55px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0; top:105px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="schedule-box-2">
-              <div class="schedule-item" style="width: 49%; bottom: 55px">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+            <div class="schedule--body__day" id="el3">
+              <div class="schedule--line" style="top: 140px;"></div>
+              <div class="schedule-box-1">
+                <div class="schedule-item disabled">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2022</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Presentador: <span>Alfonso Torres Valladares y Julian Gonzales Merino</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Charla | Expositor: <span>Lucca Rocci</span></p>
                 </div>
               </div>
-              <div class="schedule-item" style="width: 49%; right: 0; top:105px">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+              <div class="schedule-box-1">
+                <a href="info-schedule-page.html" class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Tecnología del 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Javier Egúzquiza</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                </a>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Róbotica del Futuro</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Angel Vasquez</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                      <div class="d-flex align-items-center">
+                        <img src="/static/img/video.png" alt="">
+                        <a class="g-link--blue ml-md-10" href="">En vivo por Facebook</a>
+                      </div>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-2">
+                <div class="schedule-item" style="width: 49%; bottom: 55px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0; top:105px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="schedule-box-1">
-              <div class="schedule-item" style="width: 49%;">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+            <div class="schedule--body__day" id="el4">
+              <div class="schedule--line" style="top: 140px;"></div>
+              <div class="schedule-box-1">
+                <div class="schedule-item disabled">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2023</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Presentador: <span>Alfonso Torres Valladares y Julian Gonzales Merino</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Charla | Expositor: <span>Lucca Rocci</span></p>
                 </div>
               </div>
-              <div class="schedule-item" style="width: 49%; right: 0;">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+              <div class="schedule-box-1">
+                <a href="info-schedule-page.html" class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Tecnología del 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Javier Egúzquiza</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                </a>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Róbotica del Futuro</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Angel Vasquez</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                      <div class="d-flex align-items-center">
+                        <img src="/static/img/video.png" alt="">
+                        <a class="g-link--blue ml-md-10" href="">En vivo por Facebook</a>
+                      </div>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-2">
+                <div class="schedule-item" style="width: 49%; bottom: 55px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0; top:105px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="schedule-box-1">
-              <div class="schedule-item">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+            <div class="schedule--body__day" id="el5">
+              <div class="schedule--line" style="top: 140px;"></div>
+              <div class="schedule-box-1">
+                <div class="schedule-item disabled">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2024</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Presentador: <span>Alfonso Torres Valladares y Julian Gonzales Merino</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
                 </div>
               </div>
-            </div>
-            <div class="schedule-box-1">
-              <div class="schedule-item">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+              <div class="schedule-box-1">
+                <a href="info-schedule-page.html" class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Tecnología del 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Javier Egúzquiza</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                </a>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Róbotica del Futuro</h3>
+                    </div>
+                    <p class="d-none d-md-block">09:00 am - 10:00 am</p>
+                    <p>Charla | Expositor: <span>Angel Vasquez</span></p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="schedule-box-1">
-              <div class="schedule-item">
-                <div class="schedule-item--line">
-                  <div class="schedule-item--title">
-                    <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                      <div class="d-flex align-items-center">
+                        <img src="/static/img/video.png" alt="">
+                        <a class="g-link--blue ml-md-10" href="">En vivo por Facebook</a>
+                      </div>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
                   </div>
-                  <p class="d-none d-md-block">08:00 am - 08:30 am</p>
-                  <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-2">
+                <div class="schedule-item" style="width: 49%; bottom: 55px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0; top:105px">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item" style="width: 49%;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+                <div class="schedule-item" style="width: 49%; right: 0;">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Charla | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="schedule-box-1">
+                <div class="schedule-item">
+                  <div class="schedule-item--line">
+                    <div class="schedule-item--title">
+                      <h3 class="title g-cut">Bienvenida a DeveloperWeek 2020</h3>
+                    </div>
+                    <p class="d-none d-md-block">08:00 am - 08:30 am</p>
+                    <p>Experiencias Paralelas | Expositor: <span>Lucca Rocci</span></p>
+                  </div>
                 </div>
               </div>
             </div>

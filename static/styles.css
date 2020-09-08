@@ -2259,11 +2259,31 @@ nav a:hover, nav a:focus {
   transition: 0.3s;
 }
 
-.schedule--body__day {
-  height: auto;
-  padding: 30px 20px;
+.schedule--body__container {
+  height: 100%;
   border-top: 1px solid #C4C4C4;
   position: relative;
+  overflow: hidden;
+}
+
+.schedule--body__day {
+  display: none;
+  height: auto;
+  padding: 30px 20px;
+  position: absolute;
+  width: 100%;
+}
+
+.tab-trigger a {
+  pointer-events: none;
+}
+
+.alert-close img {
+  pointer-events: none;
+}
+
+.schedule--body__day.active {
+  display: block;
 }
 
 .schedule-box-1 {

@@ -2431,7 +2431,7 @@ nav a:hover, nav a:focus {
 
 .schedule--body {
   background: #F1F6F9;
-  width: 100%;
+  width: calc(100% - 90px);;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -2851,6 +2851,10 @@ nav a:hover, nav a:focus {
   object-fit: cover;
 }
 
+#hours_side_schedule {
+  width: 90px;
+}
+
 @media screen and (min-width: 996px) {
   .panel-sponsors .silver-sponsors {
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -3008,6 +3012,16 @@ nav a:hover, nav a:focus {
   .box-alert {
     max-width: 340px;
     border-radius: 5px 0px 0px 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .schedule--body {
+    width: calc(100% - 70px);
+  }
+
+  #hours_side_schedule {
+    width: 70px;
   }
 }
 

@@ -8,7 +8,7 @@
 
 <main class="homepage-complete">
   <!-- agregar clase active para mostrar el menu -->
-  <div class="nav-side">
+  <div class="nav-side" id="mobile-nav">
     <img class="logo" src="/static/img/event-logo.png" alt="">
 
     <nav class="nav">
@@ -30,19 +30,19 @@
           </a>
         </li>
         <li>
-          <a class="active" href="schedule-page.html">
+          <a href="schedule-page.html">
             <i class="icon-calendar"></i>
             <span>Agenda</span>
           </a>
         </li>
         <li>
-          <a class="disabled" href="live-page.html">
+          <a href="live-page.html">
             <i class="icon-live"></i>
             <span>En vivo</span>
           </a>
         </li>
         <li>
-          <a href="">
+          <a class="active" href="featured-page.html">
             <i class="icon-document"></i>
             <span>Destacados</span>
           </a>
@@ -64,7 +64,6 @@
   </div>
 
   <div class="side-content-home">
-    
     <div class="side-header">
       <a id="open-mobile-menu" href="#">Abrir menú</a>
       <div class="logo-mobile">
@@ -212,85 +211,65 @@
       </div>
     </div>
 
-    <div class="side-box info-schedule-page">
-      <div class="bk-white w-100">
-        <div class="arrow-back pt-20">
-          <a href="">
-            <img class="desktop" src="/static/img/arrow-left.png" alt="">
-            <span>Atras</span>
-          </a>
-        </div>
-        <div class="wrapper">
-          <div>
-            <h3>Tecnología del 2020 en tiempos de Pandemia por el Coronavirus</h3>
-            <p>DeveloperWeek Global 2020 es la conferencia de ingenieros y desarrolladores virtuales más grande del mundo, donde miles de participantes de todo el mundo convergen en línea para más de 100 conferencias magistrales y técnicas, concurso de lanzamiento virtual de tecnología para desarrolladores, concurso de lanzamiento virtual de tecnología para desarrolladores,concurso de lanzamiento virtual de tecnología para desarrolladores.</p>
+    <div class="side-box side-feature info-schedule-page">
+      <div class="side-box-info">
+        <div class="bk-white g-tab-live mb-10 p-30">
+          <div class="arrow-back pt-20 mb-20 ">
+            <a href="">
+              <img class="desktop" src="/static/img/arrow-left.png" alt="">
+              <span>Atras</span>
+            </a>
           </div>
+          <div class="wrapper">
+            <div class="g-title--img">
+              <div class="g-title--tab">
+              </div>
+              <img src="/static/img/bcp.png" alt="">
+            </div>
 
-          <div class="speaker-list mt-40">
-            <div>
-              <figure>
-                <img src="/static/img/speaker.png" alt="Jorge Egúsquiza">
-                <figcaption>
-                  <span class="name">Jorge Egúsquiza</span>
-                  <span class="position">UTEC Ventures | Expositor</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure>
-                <img src="/static/img/speaker2.png" alt="Jorge Egúsquiza">
-                <figcaption>
-                  <span class="name">Jorge Egúsquiza</span>
-                  <span class="position">UTEC Ventures | Expositor</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure>
-                <img src="/static/img/speaker.png" alt="Jorge Egúsquiza">
-                <figcaption>
-                  <span class="name">Jorge Egúsquiza</span>
-                  <span class="position">UTEC Ventures | Expositor</span>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        
-          <div class="speaker-list">
-            <div>
-              <figure>
-                <img src="/static/img/speaker2.png" alt="Jorge Egúsquiza">
-                <figcaption>
-                  <span class="name">Jorge Egúsquiza</span>
-                  <span class="position">UTEC Ventures | Expositor</span>
-                </figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure>
-                <img src="/static/img/speaker2.png" alt="Jorge Egúsquiza">
-                <figcaption>
-                  <span class="name">Jorge Egúsquiza</span>
-                  <span class="position">UTEC Ventures | Expositor</span>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-
-          <div class="bottom-actions">
-            <a class="secondary-action" href="#">Ver más</a>
-          </div>
-
-          <div>
-            <h3>¿Cómo escoger el mejor café?</h3>
-            <p>DeveloperWeek Global 2020 es la conferencia de ingenieros y desarrolladores virtuales más grande del mundo, donde miles de participantes de todo el mundo convergen en línea para más de 100 conferencias magistrales y técnicas, concurso de lanzamiento virtual de tecnología para desarrolladores, concurso de lanzamiento virtual de tecnología para desarrolladores,concurso de lanzamiento virtual de tecnología para desarrolladores.</p>
-          </div>
-          <div>
-            <h4>La experiencia paralela llega gracias a: </h4>
-          </div>
-          <div class="silver-sponsors">
-            <div>
-              <img src="static/img/starbucks.png" alt="starbucks">
+            <div class="item active">
+              <div class="videoWrapper">
+                <iframe width="560" height="310" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="panel-description mt-20">
+                <div class="w-100">
+                  <h3 class="subtitle">Reciclaje “La nueva moda”</h3>
+                  <p>DeveloperWeek Global 2020 es la conferencia de ingenieros y desarrolladores virtuales más grande del mundo, donde miles de participantes de todo el mundo convergen en línea para más de 100 conferencias magistrales y técnicas, concurso de lanzamiento virtual de tecnología para desarrolladores, concurso de lanzamiento virtual de tecnología para desarrolladores,concurso de lanzamiento virtual de tecnología para desarrolladores.</p>
+                </div>
+              </div>
+              <div class="panel-description mt-20">
+                <div class="w-100">
+                  <h3 class="subtitle">Documentos Adjuntos</h3>
+                  <div class="mt-20">
+                    <button class="btn-blue2">
+                      <i class="icon-download"></i>
+                      <span>Descargar todo</span>
+                    </button>
+                  </div>
+                  <div class="d-flex flex-flow-wrap pt-20">
+                    <div class="box-download">
+                      <span>Diapositivas Tecnología</span>
+                      <i class="icon-arrow-download"></i>
+                    </div>
+                    <div class="box-download">
+                      <span>Libro Microestructuras</span>
+                      <i class="icon-arrow-download"></i>
+                    </div>
+                    <div class="box-download">
+                      <span>Caso de Estudio Perú</span>
+                      <i class="icon-arrow-download"></i>
+                    </div>
+                    <div class="box-download">
+                      <span>No me hagas pensar.pdf</span>
+                      <i class="icon-arrow-download"></i>
+                    </div>
+                    <div class="box-download">
+                      <span>Lectura adicional</span>
+                      <i class="icon-arrow-download"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

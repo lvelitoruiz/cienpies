@@ -25,7 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-arrow-download:before {
+  content: "\e919";
+}
+.icon-download:before {
+  content: "\e918";
+}
+.icon-preguntas:before {
+  content: "\e916";
+}
+.icon-participantes:before {
+  content: "\e917";
+}
+.icon-encuestas:before {
+  content: "\e914";
+}
+.icon-chat:before {
+  content: "\e915";
+}
+.icon-pint:before {
+  content: "\e913";
+}
+.icon-send:before {
+  content: "\e911";
+}
+.icon-emoji:before {
+  content: "\e912";
+}
 .icon-arrow-rigth:before {
   content: "\e90f";
 }

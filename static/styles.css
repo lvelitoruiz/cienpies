@@ -3393,7 +3393,6 @@ nav a:hover, nav a:focus {
   margin: auto;
 }
 
-
 @media screen and (min-width: 767px) {
   .g-premium-sponsors,
   .speaker-list-grid {
@@ -3548,7 +3547,7 @@ nav a:hover, nav a:focus {
   margin: 0;
 }
 
-.g-box-community .box-body--text i {
+.g-box-community .box-body--text a {
   display: none;
 }
 
@@ -3594,7 +3593,33 @@ nav a:hover, nav a:focus {
     padding-right: 20px;
   }
 
-  .g-box-community .box-body--text i {
+  .g-box-community .box-body--text a {
     display: initial;
+    text-decoration: none;
+    color: black;
+  }
+
+  .g-box-community--detail .box-user {
+    min-width: 84px;
+    min-height: 84px;
+    font-size: 26px;
+  }
+}
+
+.g-box-community--detail {
+  background: transparent;
+  padding: 0;
+}
+
+.box-body--contact {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 767px) {
+  .box-body--contact {
+    flex-direction: row;
   }
 }

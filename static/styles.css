@@ -1432,9 +1432,15 @@ nav a:hover, nav a:focus {
 }
 
 .side-box {
-  display: flex;
-  height: calc(100% - 60px);
-  width: 100%;
+  display: flex !important;
+  height: calc(100% - 120px) !important;
+  width: 100% !important;
+}
+
+@media screen and (min-width: 870px) {
+  .side-box {
+    height: calc(100% - 60px) !important;
+  }
 }
 
 .side-box-info {
@@ -3414,4 +3420,46 @@ nav a:hover, nav a:focus {
   margin: auto;
   height: auto;
   display: block;
+}
+
+.nav-mobile-slider {
+  overflow: auto;
+}
+
+.nav-mobile-slider ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  white-space: nowrap;
+  list-style: none;
+  position: relative;
+}
+
+.nav-mobile-slider ul li a {
+  padding: 20px;
+  display: block;
+  color: #888888;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mobile-slider ul li a i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.nav-mobile-slider ul li a span {
+  line-height: 1;
+}
+
+.nav-mobile-slider ul li a.active {
+  color: #022144;
+}
+
+@media screen and (min-width: 870px) {
+  .nav-mobile-slider {
+    display: none;
+  }
 }

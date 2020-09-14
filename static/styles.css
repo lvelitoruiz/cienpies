@@ -682,6 +682,7 @@ nav a:hover, nav a:focus {
   position: relative;
 }
 
+.g-premium-sponsors img,
 #sponsors figure img {
   border-radius: 6px;
   display: block;
@@ -690,6 +691,7 @@ nav a:hover, nav a:focus {
   width: 100%;
 }
 
+.g-premium-sponsors figure figcaption,
 #sponsors figure figcaption {
   position: absolute;
   bottom: 0;
@@ -702,15 +704,18 @@ nav a:hover, nav a:focus {
   cursor: pointer;
 }
 
+.g-premium-sponsors, 
 #sponsors .premium-sponsors {
   display: flex;
   justify-content: center;
 }
 
+.g-premium-sponsors figcaption,
 #sponsors .premium-sponsors figcaption {
   background: linear-gradient(179.37deg, rgba(0, 0, 0, 0) 24.34%, #000000 85.4%);
 }
 
+.g-premium-sponsors figcaption .sponsor-data,
 #sponsors .premium-sponsors figcaption .sponsor-data,
 #sponsors .gold-sponsors figcaption .sponsor-data {
   display: block;
@@ -724,7 +729,7 @@ nav a:hover, nav a:focus {
   padding: 0 15px 10px 15px;
 }
 
-
+.g-premium-sponsors figcaption .sponsor-name,
 #sponsors .premium-sponsors figcaption .sponsor-name {
   font-size: 20px;
   line-height: 23px;
@@ -732,6 +737,7 @@ nav a:hover, nav a:focus {
   display: block;
 }
 
+.g-premium-sponsors figcaption .sponsor-description,
 #sponsors .premium-sponsors figcaption .sponsor-description {
   font-size: 14px;
   line-height: 16px;
@@ -762,10 +768,12 @@ nav a:hover, nav a:focus {
   width: 252px;
 }
 
+.g-premium-sponsors figure,
 #sponsors .premium-sponsors figure {
   height: 183px;
   max-width: 252px;
   margin: 10px;
+  position: relative;
 }
 
 #sponsors .gold-sponsors figure {
@@ -2290,12 +2298,14 @@ nav a:hover, nav a:focus {
     margin-bottom: 10px;
   }
 
+  .g-premium-sponsors figure,
   #sponsors .premium-sponsors figure {
     min-width: 100%;
     max-width: 100%;
     margin: 10px 0;
   }
 
+  .g-premium-sponsors figure,
   #sponsors .premium-sponsors figure {
     height: 200px;
   }
@@ -3339,9 +3349,14 @@ nav a:hover, nav a:focus {
   font-size: 14px;
 }
 
+.g-premium-sponsors,
 .speaker-list-grid {
   display: grid !important;
   grid-template-columns: 100%;
+}
+
+.g-premium-sponsors figure {
+  max-width: 100%;
 }
 
 .speaker-list-grid .speaker-list-grid-item {
@@ -3349,16 +3364,54 @@ nav a:hover, nav a:focus {
   padding: 10px;
 }
 
+.center-auto {
+  width: 90%;
+  margin: auto;
+}
+
+
 @media screen and (min-width: 767px) {
+  .g-premium-sponsors,
   .speaker-list-grid {
     display: grid;
     grid-template-columns: 50% 50%;
   } 
+
+  .center-auto {
+    max-width: 760px;
+    margin: auto;
+  }
+
+  .width-80--center {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 1150px) {
+  .g-premium-sponsors,
   .speaker-list-grid {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
   } 
+
+  .center-auto {
+    max-width: 925px;
+    margin: auto;
+  }
+}
+
+.g-box-partner {
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.g-box-partner img {
+  width: 120px;
+  object-fit: none;
+  margin: auto;
+  height: auto;
+  display: block;
 }

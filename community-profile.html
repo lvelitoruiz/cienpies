@@ -8,7 +8,7 @@
 
 <main class="homepage-complete">
   <!-- agregar clase active para mostrar el menu -->
-  <div class="nav-side" id="mobile-nav">
+  <div class="nav-side">
     <img class="logo" src="/static/img/event-logo.png" alt="">
 
     <nav class="nav">
@@ -36,19 +36,19 @@
           </a>
         </li>
         <li>
-          <a href="live-page.html">
+          <a class="disabled" href="live-page.html">
             <i class="icon-live"></i>
             <span>En vivo</span>
           </a>
         </li>
         <li>
-          <a class="active" href="featured-page.html">
+          <a href="featured-page.html">
             <i class="icon-document"></i>
             <span>Destacados</span>
           </a>
         </li>
         <li>
-          <a class="disabled" href="community-profile.html">
+          <a class="active" href="community-profile.html">
             <i class="icon-user-group"></i>
             <span>Comunidad</span>
           </a>
@@ -64,6 +64,7 @@
   </div>
 
   <div class="side-content-home">
+    
     <div class="side-header">
       <a id="open-mobile-menu" href="#">Abrir menú</a>
       <div class="logo-mobile">
@@ -211,136 +212,131 @@
       </div>
     </div>
 
-    <div class="side-box side-feature">
-      <div class="side-box-info">
-        <div class="bk-white g-tab-live mb-10 p-30">
-         <div>
-          <h3 class="subtitle">Conoce más sobre Tecnología en el mundo de hoy </h3>
-         </div>
-          <div class="item active">
-            <div class="panel-talks p-10">
-              <a href="featured-detail-page.html" class="g-box--gray box-talks g-cursor-pointer">
-                <img src="/static/img/talks-2.png" alt="">
-                <div class="box-talks--detail">
-                  <h4 class="title">Reciclaje “La nueva moda”</h4>
-                  <div class="d-flex align-center">
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
-                </div>
-              </a>
-              <a href="featured-detail2-page.html" class="g-box--gray box-talks g-cursor-pointer">
-                <img src="/static/img/talks-3.png" alt="">
-                <div class="box-talks--detail">
-                  <h4 class="title">Robótica del Futuro</h4>
-                  <div class="d-flex align-center">
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
-                </div>
-              </a>
-              <div class="g-box--gray box-talks g-cursor-pointer">
-                <img src="/static/img/talks-3.png" alt="">
-                <div class="box-talks--detail">
-                  <h4 class="title">Robótica del Futuro</h4>
-                  <div class="d-flex align-center">
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="g-box--gray box-talks g-cursor-pointer">
-                <img src="/static/img/talks-3.png" alt="">
-                <div class="box-talks--detail">
-                  <h4 class="title">Robótica del Futuro</h4>
-                  <div class="d-flex align-center">
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="g-box--gray box-talks g-cursor-pointer">
-                <img src="/static/img/talks-2.png" alt="">
-                <div class="box-talks--detail">
-                  <h4 class="title">Reciclaje “La nueva moda”</h4>
-                  <div class="d-flex align-center">
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="g-box--gray box-talks g-cursor-pointer">
-                <img src="/static/img/talks-2.png" alt="">
-                <div class="box-talks--detail">
-                  <h4 class="title">Reciclaje “La nueva moda”</h4>
-                  <div class="d-flex align-center">
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div class="side-box info-schedule-page">
+      <div class="bk-white w-100">
+        <div class="center-auto pt-20">
+          <div class="schedule-item--title">
+            <h3 class="title mt-0 mb-0 c-black">Mi perfil</h3>
           </div>
-        </div>
-      </div>
-      <!-- agregar clase active en mobile -->
-      <div class="side-box-search side-box-featured">
-        <div class="box-search box-chat box-chat-nav">
-          <p class="title">Aquí podrás encontrar información destacada del evento</p>
-          <div class="list-chat p-md-0 p-20">
-            <div class="g-box--gray box-talks">
-              <img src="/static/img/talks-1.png" alt="">
-              <div class="box-talks--detail">
-                <h4 class="title">Robótica del Futuro</h4>
-                <span class="tag">All</span>
-                <div class="box-talks--user">
-                  <img src="/static/img/talk-user.png" alt="">
-                  <div>
-                    <p>Lorena Espejo</p>
-                    <span>Expositor</span>
-                  </div>
-                  <div class="btn-show">
-                    <span>Ver más</span>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
+          <p class="mb-0">Completa tu perfil, para que puedas conectar con los demás participantes del evento</p>
+          <div class="width-80--center">
+            <form action="" class="mt-40">
+              <div class="d-md-flex">
+                <div class="g-input g-input--icon mr-md-10 w-100 mb-20">
+                  <img src="/static/img/user.png" alt="">
+                  <input type="text" placeholder="Nombre">
                 </div>
+                <div class="g-input g-input--icon ml-md-10 w-100 mb-20">
+                  <img src="/static/img/user.png" alt="">
+                  <input type="text" placeholder="Apellido">
+                </div>  
+              </div>
+              <div class="g-input g-input--icon mb-20">
+                <img src="/static/img/email.png" alt="">
+                <input type="email" placeholder="Correo electrónico">
+              </div>
+              <div class="cont-link mt-10 mb-20">
+                <div class="g-checkbox">
+                  <input id="c1" type="checkbox">
+                  <label for="c1">Compartir mi correo electrónico para que las personas me puedan contactar</label>
+                </div>
+              </div>
+              <div class="g-input g-input--icon mb-20">
+                <img src="/static/img/phone.png" alt="">
+                <input type="email" placeholder="Número">
+              </div>
+              <div class="cont-link mt-10 mb-20">
+                <div class="g-checkbox">
+                  <input id="c2" type="checkbox">
+                  <label for="c2">Compartir mi número de celular para que las personas me puedan contactar</label>
+                </div>
+              </div>
+              <div class="d-md-flex">
+                <div class="w-100 mb-20 mr-md-10">
+                  <div class="g-select g-input--icon w-100">
+                    <img src="/static/img/user.png" alt="">
+                    <select name="" id="">
+                      <option value="" selected>Ingeniería</option>
+                      <option value="">--</option>
+                      <option value="">--</option>
+                    </select>
+                  </div>
+                  <span class="label-optional">Campo opcional</span>
+                </div>
+                <div class="ml-md-10 w-100 mb-20">
+                  <div class="g-select g-input--icon w-100">
+                    <img src="/static/img/user.png" alt="">
+                    <select name="" id="">
+                      <option value="" selected>Rubro de empresa</option>
+                      <option value="">--</option>
+                      <option value="">--</option>
+                    </select>
+                  </div>
+                  <span class="label-optional">Campo opcional</span>
+                </div>
+              </div>
+              <div class="w-100 mb-20">
+                <div class="g-input g-input--icon w-100">
+                  <img src="/static/img/user.png" alt="">
+                  <input type="text" placeholder="Nombre empresa">
+                </div>
+                <span class="label-optional">Campo opcional</span>
+              </div>
+            </form>
+            <div class="g-modal__profile-label mt-40">
+              <h4 class="subtitle">
+                Mis etiquetas
+              </h4>
+              <p class="mb-0">Esto te ayudará a que las personas puedan buscarte fácilmente, puedes elegir un máximo de 5 etiquetas</p>
+              <div class="box-label mt-20">
+                <span class="btn-label active">Sostenibilidad</span>
+                <span class="btn-label">Tecnología</span>
+                <span class="btn-label active">Marketing</span>
+                <span class="btn-label">Marketing</span>
+                <span class="btn-label">Marketing</span>
+                <span class="btn-label active">Desarrollo web</span>
+                <span class="btn-label">Marketing</span>
+                <span class="btn-label">Marketing</span>
+                <a class="ml-10 g-link--gray" href="">Ver todas las etiquetas</a>
               </div>
             </div>
-            <div class="g-box--gray box-talks">
-              <img src="/static/img/talks-1.png" alt="">
-              <div class="box-talks--detail">
-                <h4 class="title">Robótica del Futuro</h4>
-                <span class="tag">All</span>
-                <div class="box-talks--user">
-                  <img src="/static/img/talk-user.png" alt="">
-                  <div>
-                    <p>Lorena Espejo</p>
-                    <span>Expositor</span>
+            <div class="g-modal__profile-label mt-40">
+              <h4 class="subtitle">
+                Mis redes sociales
+              </h4>
+              <form action="" class="mt-20">  
+                <div class="d-md-flex">
+                  <div class="g-input g-input--icon mr-md-10 w-100 mb-20">
+                    <img src="/static/img/linkedin.png" alt="">
+                    <input type="text" placeholder="Link de red social">
                   </div>
-                  <div class="btn-show">
-                    <span>Ver más</span>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
+                  <div class="g-input g-input--icon ml-md-10 w-100 mb-20">
+                    <img src="/static/img/twitter.png" alt="">
+                    <input type="text" placeholder="Link de red social">
+                  </div>  
                 </div>
+                <div class="d-md-flex">
+                  <div class="g-input g-input--icon mr-md-10 w-100 mb-20">
+                    <img src="/static/img/facebook.png" alt="">
+                    <input type="text" placeholder="Link de red social">
+                  </div>
+                  <div class="g-input g-input--icon ml-md-10 w-100 mb-20">
+                    <input type="text" placeholder="Link de portafolio o  web">
+                  </div>  
+                </div>
+              </form>
+            </div>
+            <div class="g-modal__profile-label mt-40">
+              <h4 class="subtitle">
+                Acerca de mí
+              </h4>
+              <div class="g-textarea g-input--icon w-100 mt-20">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe aquí una descripción "></textarea>
+                <span class="label-optional">Campo opcional</span>
               </div>
             </div>
-            <div class="g-box--gray box-talks">
-              <img src="/static/img/talks-1.png" alt="">
-              <div class="box-talks--detail">
-                <h4 class="title">Robótica del Futuro</h4>
-                <span class="tag">All</span>
-                <div class="box-talks--user">
-                  <img src="/static/img/talk-user.png" alt="">
-                  <div>
-                    <p>Lorena Espejo</p>
-                    <span>Expositor</span>
-                  </div>
-                  <div class="btn-show">
-                    <span>Ver más</span>
-                    <i class="icon-arrow-rigth"></i>
-                  </div>
-                </div>
-              </div>
+            <div class="center-flex mt-40">
+              <button class="btn-blue">Guardar mis datos</button>
             </div>
           </div>
         </div>

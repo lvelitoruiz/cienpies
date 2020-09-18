@@ -606,6 +606,7 @@ nav a:hover, nav a:focus {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  flex-wrap: wrap-reverse;
 }
 
 .speaker-list figure {
@@ -640,6 +641,7 @@ nav a:hover, nav a:focus {
 .speaker-list figcaption span.position {
   font-size: 12px;
   font-weight: 100;
+  min-height: 30px;
 }
 
 /* Program */

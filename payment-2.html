@@ -1,0 +1,99 @@
+{% extends "_layout.html" %}
+
+{% block title %}Developer Week | June 16-17, 2020{% endblock %}
+
+{% block head %}
+{%- endblock %}
+{% block content %}
+
+<main class="homepage-complete">
+  {% include 'side-banner.html' %}
+
+  <div class="side-content">
+    <div class="payment">
+      <div class="arrow-back">
+        <a class="ml-0" href="">
+          <img class="mobile" src="/static/img/arrow-left-white.png" alt="">
+          <img class="desktop" src="/static/img/arrow-left.png" alt="">
+          <span>Atras</span>
+        </a>
+      </div>
+      <div class="box-payment">
+        <div class="steps">
+          <div class="step-item check">
+            <div class="circle">
+              <img src="/static/img/check-white.png" alt="">
+            </div>
+            <p>Factura</p>
+          </div>
+          <div class="step-item active">
+            <div class="circle">
+              <span>2</span>
+            </div>
+            <p>Pago</p>
+          </div>
+        </div>
+        <h2 class="g-title">
+        <span>Pago</span>
+        </h2>
+        <form action="">
+          <div class="g-input g-input--icon disabled">
+            <img src="/static/img/email.png" alt="">
+            <input type="email" placeholder="Correo Electrónico" disabled>
+          </div>
+          <p>Información de la tarjeta</p>
+          <div class="g-input g-input--icon">
+            <img src="/static/img/card.png" alt="">
+            <input type="text" placeholder="Número de Tarjeta">
+          </div>
+          <div class="d-md-flex">
+            <div class="g-input g-input--icon mr-md-10 w-100">
+              <img src="/static/img/card.png" alt="">
+              <input type="text" placeholder="MM / YY">
+            </div> 
+            <div class="g-input g-input--icon ml-md-10 w-100">
+              <img src="/static/img/calendar.png" alt="">
+              <input type="text" placeholder="CCV">
+            </div>  
+          </div>
+          <p>Nombre que aparece en la tarjeta</p>
+          <div class="d-md-flex">
+            <div class="g-input g-input--icon mr-md-10 w-100">
+              <img src="/static/img/user.png" alt="">
+              <input type="text" placeholder="Nombre">
+            </div> 
+            <div class="g-input g-input--icon ml-md-10 w-100">
+              <img src="/static/img/user.png" alt="">
+              <input type="text" placeholder="Apellido">
+            </div>  
+          </div>
+          <div class="cont-link mt-10">
+            <div class="g-checkbox">
+              <a class="g-link--blue" href=""> Términos y condiciones </a>
+            </div>
+          </div>
+          <div class="section-btn">
+            <button class="main-action" data-ref="#box4" data-modal-open>Pagar S/ 258.00</button>
+
+            <div class="g-modal" id="box4">
+              <div class="g-modal-small g-modal__alert check">
+                <div class="alert-item--title">
+                  <img src="/static/img/check.png" alt="">
+                  <h3 class="title">Pago Exitoso</h3>
+                  <p>Su pago ha sido procesado correctamente </p>
+                  <p>Nº de operación: <b>35843693696</b></p>
+                </div>
+                <button class="main-action mt-20">Aceptar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+{%- endblock %}
+
+{% block scripts %}
+{%- endblock %}

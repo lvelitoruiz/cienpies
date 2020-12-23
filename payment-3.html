@@ -1,0 +1,40 @@
+{% extends "_layout.html" %}
+
+{% block title %}Developer Week | June 16-17, 2020{% endblock %}
+
+{% block head %}
+{%- endblock %}
+{% block content %}
+
+<main class="homepage-complete">
+  {% include 'side-banner.html' %}
+
+  <div class="side-content">
+    <div class="payment">
+      <div class="arrow-back">
+        <a class="ml-0" href="">
+          <img class="mobile" src="/static/img/arrow-left-white.png" alt="">
+          <img class="desktop" src="/static/img/arrow-left.png" alt="">
+          <span>Atras</span>
+        </a>
+      </div>
+      <div class="box-payment">
+        <div class="box-payment-img">
+          <img src="/static/img/payment.png" alt="">
+        </div>
+        <div>
+          <p class="title">Gracias por participar en el evento Perú Sostenible 2020</p>
+          <p class="text">En breves momentos le enviaremos un correo electrónico con los datos de acceso al evento</p>
+        </div>
+        <div class="section-btn">
+          <button class="main-action" data-ref="#box4" data-modal-open>Más información del evento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{%- endblock %}
+
+{% block scripts %}
+{%- endblock %}

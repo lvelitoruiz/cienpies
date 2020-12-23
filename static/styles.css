@@ -3906,6 +3906,42 @@ nav a:hover, nav a:focus {
   margin-bottom: 25px;
 }
 
+.box-payment {
+  padding-top: 20px;
+}
+
+.payment .section-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-payment-img {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.box-payment-img img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.box-payment .title {
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+}
+
+.box-payment .text {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
 @media screen and (min-width: 767px) {
   .payment {
     width: 80%;
@@ -3933,4 +3969,72 @@ nav a:hover, nav a:focus {
     justify-content: center;
     margin-top: 50px;
   }
+}
+
+/* steps */
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps .step-item {
+  text-align: center;
+}
+
+.steps .step-item .circle {
+  display: flex;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #C4C4C4;
+  margin: 0 30px;
+  position: relative;
+}
+
+.steps .step-item .circle::before {
+  content: '';
+  width: 54px;
+  height: 1px;
+  background: #022144;
+  position: absolute;
+  right: -57px;
+}
+
+.steps .step-item:last-child .circle::before {
+  width: 0;
+}
+
+.steps .step-item p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.steps .step-item.check .circle,
+.steps .step-item.active .circle {
+  background: #022144;
+  color: white;
+  border: 0;
+}
+
+.steps .step-item.check p {
+  color: #022144;
+}
+
+.steps .step-item.check img {
+  width: 8px;
+}
+
+.steps .step-item.active p {
+  color: #022144;
+  font-weight: bold;
+}
+
+.g-input.disabled,
+.g-input.disabled input {
+  background-color: #EFEFEF;
 }

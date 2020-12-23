@@ -1,0 +1,83 @@
+{% extends "_layout.html" %}
+
+{% block title %}Developer Week | June 16-17, 2020{% endblock %}
+
+{% block head %}
+{%- endblock %}
+{% block content %}
+
+<main class="homepage-complete">
+  {% include 'side-banner.html' %}
+
+  <div class="side-content">
+    <div class="payment">
+      <div class="arrow-back">
+        <a class="ml-0" href="">
+          <img class="mobile" src="/static/img/arrow-left-white.png" alt="">
+          <img class="desktop" src="/static/img/arrow-left.png" alt="">
+          <span>Atras</span>
+        </a>
+      </div>
+      <div class="box-payment">
+        <h2 class="g-title">
+        <img class="desktop" src="/static/img/ticket.svg" alt="">  
+        <span>Datos de la Factura</span>
+        </h2>
+        <form action="">
+          <div class="d-md-flex">
+            <div class="g-input g-input--icon mr-md-10 w-100 error">
+              <img src="/static/img/user.png" alt="">
+              <input type="text" placeholder="Nombre">
+              <img class="icon-erro" src="/static/img/error.png">
+              <span class="text-error">Debes ingresar solo letras</span>
+            </div>
+            <div class="g-input g-input--icon ml-md-10 w-100">
+              <img src="/static/img/user.png" alt="">
+              <input type="text" placeholder="Apellido">
+            </div>  
+          </div>
+          <div class="d-md-flex">
+            <div class="g-select g-input--icon mr-md-10 w-100">
+              <img src="/static/img/user.png" alt="">
+              <select name="" id="">
+                <option value="" selected="">RUC</option>
+                <option value="">Carné de Extranjería</option>
+                <option value="">Pasaporte</option>
+              </select>
+            </div>
+            <div class="g-input g-input--icon ml-md-10 w-100">
+              <img src="/static/img/user.png" alt="">
+              <input type="text" placeholder="Número de RUC">
+            </div>  
+          </div>
+          <div class="g-input g-input--icon">
+            <img src="/static/img/user.png" alt="">
+            <input type="text" placeholder="Razón Social">
+          </div>
+          <div class="g-input g-input--icon">
+            <img src="/static/img/user.png" alt="">
+            <input type="text" placeholder="Dirección">
+          </div>
+          <div class="g-input g-input--icon">
+            <img src="/static/img/email.png" alt="">
+            <input type="email" placeholder="Correo Electrónico">
+          </div>
+          <div class="cont-link mt-10">
+            <div class="g-checkbox">
+              <input id="c1" type="checkbox">
+              <label for="c1">Acepto la <a class="g-link--blue" href="">Políticas de Venta</a></label>
+            </div>
+          </div>
+          <div class="section-btn">
+            <button class="main-action" data-modal-open="">Ir a pagar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+{%- endblock %}
+
+{% block scripts %}
+{%- endblock %}

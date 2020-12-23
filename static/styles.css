@@ -54,6 +54,10 @@ body {
   margin-bottom: 20px;
 }
 
+.ml-0 {
+  margin-left: 0 !important;
+}
+
 .ml-10 {
   margin-left: 10px;
 }
@@ -3786,5 +3790,147 @@ nav a:hover, nav a:focus {
 
   .ticket-container:hover {
     width: 120%;
+  }
+}
+
+/* checkout */
+.box-checkout {
+  display: flex;
+  background: rgba(2, 33, 68, 0.1);
+  border: 2px solid #022144;
+  border-radius: 10px;
+  padding: 20px;
+  white-space: nowrap;
+  flex-direction: column;
+}
+
+.box-checkout .info {
+  padding-right: 20px;
+  width: 100%;
+  color: #022144;
+}
+
+.box-checkout p {
+  color: #022144;
+}
+
+.box-checkout .price-und {
+  padding-right: 40px;
+}
+
+.box-checkout .price-end p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.box-checkout .cantidad {
+  max-width: 140px;
+  padding-right: 40px;
+}
+
+.box-checkout .cantidad .g-input {
+  background-color: white;
+  text-align: center;
+}
+
+.checkout .g-title {
+  margin-bottom: 20px;
+}
+
+.checkout {
+  width: 90%;
+}
+
+.checkout .box-code {
+  padding-top: 20px;
+}
+
+.g-input--icon img {
+  width: 20px;
+}
+
+.checkout .section-btn {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout .section-btn a {
+  width: initial;
+}
+
+@media screen and (min-width: 767px) {
+  .box-checkout {
+    display: flex;
+    background: rgba(2, 33, 68, 0.1);
+    border: 2px solid #022144;
+    border-radius: 10px;
+    padding: 10px 30px;
+    align-items: flex-end;
+    white-space: nowrap;
+    flex-direction: column;
+  }
+
+  .checkout {
+    width: 80%;
+  }
+
+  .box-checkout {
+    flex-direction: row;
+  }
+
+  .checkout .g-title {
+    margin-bottom: 60px;
+  }
+
+  .checkout .box-code {
+    padding-left: 30px;
+    width: 60%;
+    padding-top: 20px;
+  }
+}
+
+/* payment */
+
+.payment .g-title {
+  margin-bottom: 20px;
+}
+
+.payment {
+  width: 90%;
+}
+
+.payment form .g-input, 
+.payment form .g-select {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 767px) {
+  .payment {
+    width: 80%;
+  }
+
+  .payment .g-title {
+    margin-bottom: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+
+  .payment .g-title span {
+    padding-left: 6px;
+  }
+
+  .box-payment {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .payment .section-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
   }
 }

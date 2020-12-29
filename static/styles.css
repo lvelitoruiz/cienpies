@@ -3796,12 +3796,17 @@ nav a:hover, nav a:focus {
 /* checkout */
 .box-checkout {
   display: flex;
-  background: rgba(2, 33, 68, 0.1);
-  border: 2px solid #022144;
+  border: 1px solid #EFEFEF;
   border-radius: 10px;
   padding: 20px;
   white-space: nowrap;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.box-checkout.active {
+  background: rgba(2, 33, 68, 0.1);
+  border: 2px solid #022144;
 }
 
 .box-checkout .info {
@@ -3860,11 +3865,22 @@ nav a:hover, nav a:focus {
   width: initial;
 }
 
+.checkout .box-code--info .check {
+  display: flex;
+  align-items: center;
+  color: #29BD38;
+}
+
+.checkout .box-code .box-code--info .g-btn--linea-blue {
+  padding: 0 40px;
+  margin-top: 20px;
+}
+
+
 @media screen and (min-width: 767px) {
   .box-checkout {
     display: flex;
-    background: rgba(2, 33, 68, 0.1);
-    border: 2px solid #022144;
+    border: 1px solid #EFEFEF;
     border-radius: 10px;
     padding: 10px 30px;
     align-items: flex-end;
@@ -3888,6 +3904,21 @@ nav a:hover, nav a:focus {
     padding-left: 30px;
     width: 60%;
     padding-top: 20px;
+  }
+
+  .checkout .box-code .box-code--info {
+    display: flex;
+    align-items: center;
+  }
+
+  .checkout .box-code .box-code--info .g-btn--linea-blue {
+    padding: 0 40px;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .checkout .box-code .box-code--info .g-input {
+    min-width: 380px;
   }
 }
 
@@ -4037,4 +4068,50 @@ nav a:hover, nav a:focus {
 .g-input.disabled,
 .g-input.disabled input {
   background-color: #EFEFEF;
+}
+
+.g-btn--linea-blue {
+  background: #FFFFFF;
+  border: 1px solid #3E607B;
+  box-sizing: border-box;
+  border-radius: 10px;
+  min-height: 49px;
+  font-size: 14px;
+  color: #3E607B;
+  cursor: pointer;
+}
+
+.g-tabs-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.g-tabs-btn--item {
+  background: #FFFFFF;
+  border: 1px solid #888888;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.g-tabs-btn--item span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+}
+
+.g-tabs-btn--item.active {
+  background: #022144;
+}
+
+.g-tabs-btn--item.active span {
+  color: white;
 }

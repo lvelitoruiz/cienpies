@@ -1,10 +1,5 @@
-{% extends "_layout.html" %}
-
-{% block title %}Developer Week | June 16-17, 2020{% endblock %}
-
-{% block head %}
-{%- endblock %}
-{% block content %}
+{% extends "_layout.html" %} {% block title %}Developer Week | June 16-17,
+2020{% endblock %} {% block head %} {%- endblock %} {% block content %}
 
 <main class="homepage-complete">
   {% include 'side-banner.html' %}
@@ -13,14 +8,14 @@
     <div class="checkout">
       <div class="arrow-back">
         <a class="ml-0" href="">
-          <img class="mobile" src="/static/img/arrow-left-white.png" alt="">
-          <img class="desktop" src="/static/img/arrow-left.png" alt="">
+          <img class="mobile" src="/static/img/arrow-left-white.png" alt="" />
+          <img class="desktop" src="/static/img/arrow-left.png" alt="" />
           <span>Atras</span>
         </a>
       </div>
       <h2 class="g-title">
-      <img class="desktop" src="/static/img/ticket.svg" alt="">  
-       <span>Comprar Entrada</span>
+        <img class="desktop" src="/static/img/ticket.svg" alt="" />
+        <span>Comprar Entrada</span>
       </h2>
       <div class="box-checkout mb-10 active">
         <div class="info">
@@ -32,7 +27,7 @@
         </div>
         <div class="cantidad">
           <div class="g-input">
-            <input type="number">
+            <input type="number" />
           </div>
         </div>
         <div class="price-end">
@@ -49,25 +44,28 @@
         </div>
         <div class="cantidad">
           <div class="g-input">
-            <input type="number">
+            <input type="number" />
           </div>
         </div>
         <div class="price-end">
           <p>S/ 258.00</p>
         </div>
       </div>
-      <p class="pt-20">Si necesitas asesoría personalizada por compras de volumen o políticas de pago <a class="g-link--blue" href="">contáctanos</a></p>
+      <p class="pt-20">
+        Si necesitas asesoría personalizada por compras de volumen o políticas
+        de pago <a class="g-link--blue" href="">contáctanos</a>
+      </p>
       <form class="box-code" action="">
         <p>¿Cuentas con un código promocional?</p>
         <div class="box-code--info">
           <!-- add class disabled -->
-          <div class="g-input g-input--icon ">
-            <img src="/static/img/ticket.png" alt="">
-            <input type="text" placeholder="Ingresa código promocional">
+          <div class="g-input g-input--icon">
+            <img src="/static/img/ticket.png" alt="" />
+            <input type="text" placeholder="Ingresa código promocional" />
           </div>
           <button class="g-btn--linea-blue">Aplicar</button>
           <div class="check">
-            <img src="/static/img/check-green.png" alt="">
+            <img src="/static/img/check-green.png" alt="" />
             <span class="ml-10">Aplicado</span>
           </div>
         </div>
@@ -79,7 +77,4 @@
   </div>
 </main>
 
-{%- endblock %}
-
-{% block scripts %}
-{%- endblock %}
+{%- endblock %} {% block scripts %} {%- endblock %}

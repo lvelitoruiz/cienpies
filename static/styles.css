@@ -15,7 +15,7 @@ body {
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-flex {
@@ -112,6 +112,10 @@ body {
 
 .w-100 {
   width: 100%;
+}
+
+.w-180 {
+  width: 180px;
 }
 
 .max-w-540 {
@@ -2726,6 +2730,10 @@ nav a:hover, nav a:focus {
     display: block;
   }
 
+  .d-md-flex {
+    display: flex !important;
+  }
+
   .schedule-item--title {
     align-items: center;
     flex-direction: row;
@@ -3958,6 +3966,10 @@ nav a:hover, nav a:focus {
   margin: 0 auto;
 }
 
+.center-margin {
+  margin: 0 auto;
+}
+
 .box-payment .title {
   font-size: 25px;
   line-height: 35px;
@@ -3973,9 +3985,22 @@ nav a:hover, nav a:focus {
   color: #000000;
 }
 
+.text-color {
+  color: #333333 !important;
+}
+
+.btn-redondo {
+  border-radius: 30px;
+}
+
 @media screen and (min-width: 767px) {
   .payment {
     width: 80%;
+  }
+
+  .w-80 {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .payment .g-title {
@@ -3999,6 +4024,13 @@ nav a:hover, nav a:focus {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+  }
+
+  .arrow-back--btn {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -4128,3 +4160,4 @@ nav a:hover, nav a:focus {
     padding: 40px 0;
   }
 }
+

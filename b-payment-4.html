@@ -1,0 +1,43 @@
+{% extends "_layout.html" %}
+
+{% block title %}Developer Week | June 16-17, 2020{% endblock %}
+
+{% block head %}
+{%- endblock %}
+{% block content %}
+
+<main class="homepage-complete">
+  {% include 'side-banner.html' %}
+
+  <div class="side-content">
+    <div class="payment">
+      <div class="arrow-back arrow-back--btn">
+        <a href="">
+          <img class="mobile" src="/static/img/arrow-left-white.png" alt="">
+          <img class="desktop" src="/static/img/arrow-left.png" alt="">
+          <span>Atrás</span>
+        </a>
+        <button class="btn-blue3 btn-redondo d-none d-md-flex">
+          <img src="./static/img/wsp.png" alt="">
+          <span class="ml-10">Ayuda</span>
+        </button>
+      </div>
+      <div class="box-payment">
+        <div class="d-flex align-items-center flex-direction-column pt-60 text-align-center">
+          <img src="./static/img/efectivo.png" alt="">
+          <p class="fz-20 c-blue pt-60"><strong>Recuerda, tienes “X” horas para realizar el Pago por: </strong></p>
+          <img class="pt-20" src="./static/img/pagoefectivo.png" alt="">
+          <p class="pt-20 c-blue">Después de realizar tu <b>Pago</b>, se te enviará un <b>correo de Confirmación.</b></p>
+        </div>
+        <div class="section-btn">
+          <button class="main-action">Más información del evento</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{%- endblock %}
+
+{% block scripts %}
+{%- endblock %}

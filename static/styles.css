@@ -4286,3 +4286,25 @@ select[disabled] > option {
   background: #FAC913;
   border: 1px solid #FAC913;
 }
+
+@media screen and (min-width: 767px) {
+  .homepage-complete--2 {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .homepage-complete--2 .payment {
+    margin: 0 auto;
+  }
+  
+  .homepage-complete--2 .side-content {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .homepage-complete--2 .payment-scroll {
+    height: calc(100vh - 240px);
+    overflow: auto;
+  }
+}
+

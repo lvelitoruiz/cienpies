@@ -4260,6 +4260,18 @@ select[disabled] > option {
   margin-right: 10px;
 }
 
+.options-payment--1 .img-1 {
+  display: none;
+}
+
+.options-payment--1.active .img-1 {
+  display: block;
+}
+
+.options-payment--1.active .img-2 {
+  display: none;
+}
+
 .options-payment--2 {
   margin-left: 10px;
 }

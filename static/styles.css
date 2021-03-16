@@ -4389,6 +4389,15 @@ select[disabled] > option {
   width: 80%;
 }
 
+.box-chat .list-chat .item-chat .user img {
+  width: 25px;
+  height: 25px;
+}
+
+.box-chat .list-chat .item-chat.item-chat-2 .text p span{
+  color: #1B63D0;
+}
+
 .box-chat .list-chat .item-chat.item-chat-2 .text {
   display: flex;
 }

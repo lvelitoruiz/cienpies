@@ -3723,16 +3723,18 @@ select[disabled] > option {
 
 .ticket-container {
   width: 100%;
-  height: 24rem;
   margin-bottom: 1rem;
   transition: box-shadow 0.5s;
   border: 1px solid #EFEFEF;
   border-radius: 10px;
   -webkit-backface-visibility: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column
 }
 
 .ticket-top {
-  height: 20%;
+  min-height: 60px;
   border-bottom: 1px dashed #C4C4C4;
   position: relative;
   box-sizing: border-box;
@@ -3771,7 +3773,7 @@ select[disabled] > option {
 }
 
 .ticket-bottom {
-  height: 80%;
+  height: 100%;
   border-top-width: 0;
   box-sizing: border-box;
   background: white;
@@ -3836,7 +3838,6 @@ select[disabled] > option {
 .ticket-container:hover {
   box-shadow: 0px 5px 10px #CDE3FE;
   background-color: #F4F8FD;
-  height: 28rem;
 }
 
 .ticket-container:hover .ticket-bottom,
@@ -3860,7 +3861,6 @@ select[disabled] > option {
 
 @media screen and (min-width: 767px) {
   .ticket-block {
-    align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -3868,10 +3868,12 @@ select[disabled] > option {
 
   .ticket-container {
     margin: 1rem;
+    min-height: 24rem;
   }
 
   .ticket-container:hover {
-    width: 120%;
+    transform: scale(1.1,1.1);
+    min-height: 28rem;
   }
 }
 

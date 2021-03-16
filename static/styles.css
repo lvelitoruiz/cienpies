@@ -1613,6 +1613,7 @@ select[disabled] > option {
 .box-chat .list-chat {
   height: 100%;
   overflow: auto;
+  position: relative;
 }
 
 .box-search.box-chat-nav {
@@ -4322,3 +4323,127 @@ select[disabled] > option {
   }
 }
 
+
+.box-tab {
+  display: none;
+  flex-direction: column;
+  height: calc(100% - 50px);
+}
+
+.box-tab.active {
+  display: flex;
+}
+
+.input-chat {
+  align-items: center;
+  border-radius: 43px;
+  border: 1px solid #C4C4C4;
+  display: flex;
+  height: 43px;
+  margin: 20px 15px;
+  padding: 0 16px;
+}
+
+.input-chat input {
+  border: none;
+  padding: 0 10px;
+  width: 100%;
+  font-size: 12px;
+}
+
+.input-chat i {
+  color: #C4C4C4;
+  cursor: pointer;
+}
+
+.input-chat i:hover {
+  color: #022144;
+}
+
+.box-chat .list-chat .item-chat .info.info-2 {
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-chat .list-chat .item-chat .info.info-2 .time {
+  padding-left: 6px;
+} 
+
+.box-chat .list-chat .item-chat.item-chat-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box-chat .list-chat .item-chat.item-chat-2 .header {
+  display: flex;
+}
+
+.box-chat .list-chat .item-chat.item-chat-2 .text p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3B3B3B;
+  font-weight: 300;
+  width: 80%;
+}
+
+.box-chat .list-chat .item-chat.item-chat-2 .text {
+  display: flex;
+}
+
+.box-chat .list-chat .item-chat.item-chat-2 .text .icons {
+  display: none;
+  padding-top: 10px;
+  color: #C4C4C4;
+}
+
+.box-chat .list-chat .item-chat.item-chat-2 .text .icons i {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.box-chat .list-chat .item-chat.item-chat-2 .text:hover .icons {
+  display: flex;
+}
+
+.box-chat .list-chat .item-chat.item-chat-3 {
+  align-items: flex-end;
+}
+
+.box-chat .list-chat .item-chat.item-chat-3 .user {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.box-chat .list-chat .item-chat.item-chat-3 .text {
+  justify-content: flex-end;
+}
+
+.box-chat .list-chat .item-chat.item-chat-3 .text p {
+  text-align: right;
+}
+
+.box-chat .list-chat .item-chat.item-chat-3 .text .icons i {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.list-chat .btn-floating {
+  position: sticky;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+.list-chat .btn-floating p {
+  background: #E7E7E7;
+  display: inline-block;
+  color: #3B3B3B;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 15px;
+  border-radius: 40px;
+}

@@ -1777,6 +1777,10 @@ select[disabled] > option {
 
   .side-box-search {
     display: initial;
+  }
+
+  .side-box-search--chat {
+    display: initial;
     position: fixed;
     height: initial;
     right: 0;
@@ -1784,7 +1788,7 @@ select[disabled] > option {
     padding-bottom: 0;
   }
 
-  .side-box-search.active {
+  .side-box-search--chat.active {
     display: initial;
     position: fixed;
     height: 100%;

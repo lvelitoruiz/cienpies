@@ -1782,7 +1782,7 @@ select[disabled] > option {
   .side-box-search--chat {
     display: initial;
     position: fixed;
-    height: initial;
+    height: 60px;
     right: 0;
     bottom: 0;
     padding-bottom: 0;

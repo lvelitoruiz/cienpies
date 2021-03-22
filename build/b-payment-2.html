@@ -17,7 +17,7 @@
 <body>
   
 
-<main class="homepage-complete">
+<main class="homepage-complete homepage-complete--2">
   <div class="side-banner">
     <img class="logo" src="static/img/event-logo.png" alt="">
     <div class="box-sponsor">
@@ -62,7 +62,7 @@
         </button>
       </div>
       <div class="box-payment">
-        <div class="steps">
+        <div class="steps"> 
           <div class="step-item check">
             <div class="circle">
               <img src="static/img/check-white.png" alt="">
@@ -76,67 +76,70 @@
             <p>Pago</p>
           </div>
         </div>
-        <div class="options-payment">
-          <div class="options-payment--1 active">
-            <p>Tarjeta de débito o crédito</p>
-            <img src="./static/img/cards.png" alt="">
-          </div>
-          <div class="options-payment--2">
-            <img src="./static/img/pagoefectivo.png" alt="">
-          </div>
-        </div>
-        <form action="">
-          <div class="g-input g-input--icon disabled">
-            <img src="static/img/email.png" alt="">
-            <input type="email" placeholder="Correo Electrónico" disabled>
-          </div>
-          <p class="c-black">Información de la tarjeta</p>
-          <div class="g-input g-input--icon">
-            <img src="static/img/card.png" alt="">
-            <input type="text" placeholder="Número de Tarjeta">
-          </div>
-          <div class="d-md-flex">
-            <div class="g-input g-input--icon mr-md-10 w-100">
-              <img src="static/img/calendar.png" alt="">
-              <input type="text" placeholder="MM / YY">
-            </div> 
-            <div class="g-input g-input--icon ml-md-10 w-100">
-              <img src="static/img/calendar.png" alt="">
-              <input type="text" placeholder="CCV">
-            </div>  
-          </div>
-          <p class="c-black">Nombre que aparece en la tarjeta</p>
-          <div class="d-md-flex">
-            <div class="g-input g-input--icon mr-md-10 w-100">
-              <img src="static/img/user.png" alt="">
-              <input type="text" placeholder="Nombre">
-            </div> 
-            <div class="g-input g-input--icon ml-md-10 w-100">
-              <img src="static/img/user.png" alt="">
-              <input type="text" placeholder="Apellido">
-            </div>  
-          </div>
-          <div class="cont-link mt-10">
-            <div class="g-checkbox">
-              <a class="g-link--blue" href=""> Términos y condiciones </a>
+        <div class="payment-scroll">
+          <div class="options-payment">
+            <div class="options-payment--1 active">
+              <p>Tarjeta de débito o crédito</p>
+              <img class="img-1" src="./static/img/cards.png" alt="">
+              <img class="img-2" src="./static/img/cards-2.png" alt="">
+            </div>
+            <div class="options-payment--2">
+              <img src="./static/img/pagoefectivo.png" alt="">
             </div>
           </div>
-          <div class="section-btn">
-            <button class="main-action" data-ref="#box4" data-modal-open>Pagar S/ 258.00</button>
-
-            <div class="g-modal" id="box4">
-              <div class="g-modal-small g-modal__alert check">
-                <div class="alert-item--title">
-                  <img src="static/img/check-2.png" alt="">
-                  <h3 class="title c-blue">Pago Exitoso</h3>
-                  <p class="c-black">Su pago ha sido procesado correctamente </p>
-                  <p class="c-black">Nº de operación: <b>35843693696</b></p>
-                </div>
-                <button class="main-action mt-20">Aceptar</button>
+          <form action="">
+            <div class="g-input g-input--icon disabled">
+              <img src="static/img/email.png" alt="">
+              <input type="email" placeholder="Correo Electrónico" disabled>
+            </div>
+            <p class="c-black">Información de la tarjeta</p>
+            <div class="g-input g-input--icon">
+              <img src="static/img/card.png" alt="">
+              <input type="text" placeholder="Número de Tarjeta">
+            </div>
+            <div class="d-md-flex">
+              <div class="g-input g-input--icon mr-md-10 w-100">
+                <img src="static/img/calendar.png" alt="">
+                <input type="text" placeholder="MM / YY">
+              </div> 
+              <div class="g-input g-input--icon ml-md-10 w-100">
+                <img src="static/img/calendar.png" alt="">
+                <input type="text" placeholder="CCV">
+              </div>  
+            </div>
+            <p class="c-black">Nombre que aparece en la tarjeta</p>
+            <div class="d-md-flex">
+              <div class="g-input g-input--icon mr-md-10 w-100">
+                <img src="static/img/user.png" alt="">
+                <input type="text" placeholder="Nombre">
+              </div> 
+              <div class="g-input g-input--icon ml-md-10 w-100">
+                <img src="static/img/user.png" alt="">
+                <input type="text" placeholder="Apellido">
+              </div>  
+            </div>
+            <div class="cont-link mt-10">
+              <div class="g-checkbox">
+                <a class="g-link--blue" href=""> Términos y condiciones </a>
               </div>
             </div>
-          </div>
-        </form>
+            <div class="section-btn">
+              <button class="main-action" data-ref="#box4" data-modal-open>Pagar S/ 258.00</button>
+
+              <div class="g-modal" id="box4">
+                <div class="g-modal-small g-modal__alert check">
+                  <div class="alert-item--title">
+                    <img src="static/img/check-2.png" alt="">
+                    <h3 class="title c-blue">Pago Exitoso</h3>
+                    <p class="c-black">Su pago ha sido procesado correctamente </p>
+                    <p class="c-black">Nº de operación: <b>35843693696</b></p>
+                  </div>
+                  <button class="main-action mt-20">Aceptar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

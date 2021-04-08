@@ -9,10 +9,16 @@ var tabs = document.getElementsByClassName('schedule--body__day');
 var arrowsRight = document.getElementsByClassName('arrow-rigth');
 var arrowsLeft = document.getElementsByClassName('arrow-left');
 
+var menutriggers = document.querySelectorAll('.anchorlink');
+
 window.onload = async function() {
   menuOpen.addEventListener('click',openMenu);
   menuClose.addEventListener('click',openMenu);
   
+  for(let i = 0; i < menutriggers.length; i++) {
+    menutriggers[i].addEventListener('click',scrollToDiv);
+  }
+
   for(let i = 0; i < triggers.length; i++) {
     triggers[i].addEventListener('click',changeTab);
   }
@@ -74,6 +80,25 @@ window.onload = async function() {
   function closeAlert(event) {
     event.preventDefault();
     event.target.parentNode.style.display = "none";
+  }
+
+  function scrollToDiv(e) {
+    let targetted = e.target;
+    e.preventDefault();
+    let goTo = targetted.getAttribute('href');
+    let element = document.querySelector(goTo);
+    console.log(element);
+    let distance = element.offsetTop;
+    console.log(distance);
+    let height1 = document.getElementById('site-header').clientHeight;
+    console.log(distance,height1);
+    window.scrollTo(
+      {
+        top: distance - height1,
+        left: 0,
+        behavior: 'smooth'
+      }
+    );
   }
 
   function changeTab(event) {

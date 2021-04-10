@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-quiz:before {
+  content: "\e91a";
+}
+.icon-nav:before {
+  content: "\e91b";
+}
+.icon-check-2:before {
+  content: "\e91c";
+}
 .icon-arrow-download:before {
   content: "\e919";
 }

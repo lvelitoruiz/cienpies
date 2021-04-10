@@ -11,12 +11,18 @@ var arrowsLeft = document.getElementsByClassName('arrow-left');
 
 var menutriggers = document.querySelectorAll('.anchorlink');
 
+var chatTriggers = document.querySelectorAll('.side-trigger');
+
 window.onload = async function() {
   menuOpen.addEventListener('click',openMenu);
   menuClose.addEventListener('click',openMenu);
   
   for(let i = 0; i < menutriggers.length; i++) {
     menutriggers[i].addEventListener('click',scrollToDiv);
+  }
+
+  for(let i = 0; i < chatTriggers.length; i++) {
+    chatTriggers[i].addEventListener('click',showBoxes);
   }
 
   for(let i = 0; i < triggers.length; i++) {
@@ -112,6 +118,22 @@ window.onload = async function() {
     }
     element.classList.add('active');
     tab.classList.add('active');
+  }
+
+  function showBoxes() {
+    let triggered = event.target;
+    let element = triggered.closest('.side-trigger');
+    let reference = element.dataset.ref;
+    let tabs = document.querySelectorAll('.box-tab');
+    
+    for(let i = 0; i < tabs.length; i++) {
+      tabs[i].classList.remove('active');
+      chatTriggers[i].classList.remove('active');
+    }
+
+    document.querySelector('#'+reference).classList.add('active');
+    element.classList.add('active');
+
   }
 
   function openMenu() {

@@ -4372,7 +4372,7 @@ select[disabled] > option {
 .box-tab {
   display: none;
   flex-direction: column;
-  height: calc(100% - 50px);
+  height: calc(100%);
 }
 
 .box-tab.active {
@@ -4533,4 +4533,9 @@ select[disabled] > option {
   justify-content: center;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.box-tab-container {
+  display: block;
+  height: calc(100% - 50px);
 }

@@ -4479,6 +4479,7 @@ select[disabled] > option {
 
 .box-items .list-items .item-chat.item-chat-2 .text {
   display: flex;
+  width: 100%;
 }
 
 .box-items .list-items .item-chat.item-chat-2 .text .icons {
@@ -4607,6 +4608,87 @@ select[disabled] > option {
 }
 /* end tab chat */
 
+/* tab question */
+.container-question {
+  height: 100%;
+  padding: 15px;
+}
+
+.container-question--scroll {
+  height: calc(100% - 104px);
+}
+
+.container-question .list-items .item-chat.item-chat-2 {
+  margin-bottom: 40px;
+}
+/* end tab question */
+
+/* tab polls */
+.box-pulls .text-question {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.box-pulls .list-pulls {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.box-pulls .list-pulls .radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.box-pulls .list-pulls .radio .radio__input {
+  height: 21px;
+}
+
+.box-pulls .list-pulls .radio .radio__label {
+  font-size: 12px;
+  line-height: 1;
+  padding-left: 10px;
+}
+
+.box-pulls .btn-blue {
+  margin: 0 auto;
+  border-radius: 40px;
+  font-size: 12px;
+  padding: 10px 60px;
+}
+
+.alert-polls {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.alert-polls.nice span {
+  font-size: 50px;
+  color: #29BD38;
+}
+
+.alert-polls.nice p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.alert-polls.fail span {
+  font-size: 50px;
+  color: #828282;
+}
+
+.alert-polls.fail p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #828282;
+}
+/* end tab polls */
+
 /* END TABS */
 
 .box-user {
@@ -4648,4 +4730,64 @@ select[disabled] > option {
 
 .none {
   display: none;
+}
+
+/* card fix */
+.card-fix {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+}
+
+.card-fix .header {
+  display: flex;
+  align-items: center;
+}
+
+.card-fix .header .user {
+  min-width: 25px;
+  min-height: 25px;
+  max-height: 25px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  position: relative;
+  font-weight: 300;
+}
+
+.card-fix .header .info {
+  width: 100%;
+}
+
+.card-fix .header .info .name {
+  line-height: 1;
+  font-size: 12px;
+}
+
+.card-fix .header .info .time {
+  color: #888888;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1;
+  padding-left: 6px;
+  white-space: nowrap;
+}
+
+.card-fix .header .info .text {
+  color: #3E607B;
+  font-size: 11px;
+  margin: 0;
+  line-height: 1;
+}
+
+.card-fix .text-2 p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  margin: 0;
+  padding-top: 14px;
 }
